@@ -1,0 +1,45 @@
+.title_text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 58px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #1E1E1E;
+}
+.title_text-white {
+  color: #FFFFFF;
+}
+.sub_title_text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #c8c8c8;
+}
+.content_title_text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 0.9px;
+  color: #1E1E1E;
+}
+.date_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 0.8px;
+  color: #AAAAAA;
+}
+.top_container{
+  background-image: url(./img/header_company.png);
+  background-position: center;
+}
+.top_overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: rgba(30, 30, 30, 0.3);
+  /* #1E1E1E -> rgb(30,30,30) */
+}

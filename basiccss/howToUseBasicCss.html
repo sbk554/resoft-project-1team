@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공통 css 적용</title>
+  <!-- reset.css와 basic.css 추가 -->
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./basic.css">
+  <!-- google font 추가 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- 구글 폰트 사용 예시 : 사용하실 땐 css 파일로 빼서 쓰시면 됩니다 -->
+  <!-- 예시로 보여주는 거니까 클래스이름, 속성 어떤 걸 추가해서 써도 상관없음 -->
+  <style>
+    /* p 태그가 아니라 어떤 태그도 상관 없음 */
+    .light {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 300;
+    }
+    .regular {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 400;
+    }
+    .medium {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 500;
+    }
+    .bold {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <!-- 상단 화면 사용 예시 -->
+  <div class="top_container">
+    <div class="top_overlay">
+      <h1 class="title_text title_text-white">회사소개</h1>
+    </div>
+  </div>
+
+  <!-- 제목, 부제목, 뉴스 제목, 뉴스 날짜 사용 예시 -->
+  <h1 class="title_text">Title text</h1>
+  <p class="sub_title_text">Subtitle text</p>
+  <h3 class="content_title_text">Content title text</p>
+  <p class="date_text">2022/07/20</p>
+
+  <!-- 구글 폰트 사용 예시 : html -->
+  <p class="light">구글폰트 테스트 light</p>
+  <p class="regular">구글폰트 테스트 regular</p>
+  <p class="medium">구글폰트 테스트 medium</p>
+  <p class="bold">구글폰트 테스트 bold</p>
+</body>
+
+</body>
+</html>
