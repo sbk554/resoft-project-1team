@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./basic.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Resoft</title>
+</head>
+<body>
+    <header class="header">
+    
+        <a class="img_wrap" href="./basic.css">
+            <img src="../img/common img/logo_resoft.png" alt="메인로고">
+        </a>
+
+        <div id="wrapper">
+            <nav>                
+                <ul id="wrap_text">
+                    <li><a href="#">회사소개</a>
+                        <ul class="nvi close">
+                            <li><a href="#">Resoft소개</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">특허&인증</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">사업현황</a>
+                        <ul class="nvi close">
+                            <li><a href="#">ECOCE</a></li>
+                            <li><a href="#">MoaDo</a></li>
+                            <li><a href="#">Etc</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">정보마당</a>
+                        <ul class="nvi close">
+                            <li><a href="#">Resoft소식</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nvi close"></div>
+        </div>
+
+        <a href="#" class="btn">
+            <img src="../img/icon/ic_menu_wt.png" alt="">
+        </a>
+       
+            <div class="display">
+                <img class="first on" src="">
+            </div>
+
+          
+
+    
+    </header>
+
+
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                if($('.nvi').hasClass('close')){
+                    $('.nvi').addClass('more').removeClass('close');
+                }else if($('.nvi').hasClass('more')){
+                    $('.nvi').addClass('close').removeClass('more');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
