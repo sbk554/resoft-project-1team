@@ -1,0 +1,115 @@
+<!-- 사업 현황 페이지 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REsoft</title>
+  <link rel="stylesheet" href="../basiccss/reset.css">
+  <link rel="stylesheet" href="../basiccss/basic.css">
+  <link rel="stylesheet" href="./3page.css">
+  <!-- google font 추가 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav_wrap">
+          <!-- REsfot logo -->
+          <a href="../1page/1page.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="REsoft logo"></a>
+          <div>
+            <ul class="nav_list">
+              <li><a href="../2page/2page.html">회사소개</a></li>
+              <li><a href="../3page/3page.html">사업현황</a></li>
+              <li><a href="../4page/4page.html">정보마당</a></li>
+            </ul>
+            <a href="#" class="button-menu"><img src="../img/icon/ic_menu_bk.png" alt="hamburger button"></a>
+          </div>
+      </div>
+      <div class="nav close"></div>
+    </nav>
+    <!-- top banner -->
+    <div class="top_container">
+      <div class="top_overlay">
+        <h1 class="title_text title_text-white">사업현황</h1>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- First project ecoce section -->
+    <section id="section_ecoce">
+      <div class="container">
+        <!-- ecoce title -->
+        <h2 class="title_text">에코스</h2>
+        <p class="sub_title_text">ECO-Clean Earth</p>
+        <!-- ecoce content -->
+        <div>
+          <!-- 이미지 -->
+          <div class="ecoce_background">
+            <img src="../img/3page/proj_ecoce_app.png" alt="에코스 앱 실행화면" class="image_ecoce_app">
+          </div>
+          <!-- 설명 -->
+          <div class="ecoce_explain">
+            <h3 class="text_explain">국내 최초<br>탄소중립 실천인증 플랫폼</h3>
+            <img src="../img/3page/logo_ecoce.png" alt="에코스 로고" class="image_ecoce_logo">
+            <p>ECO-Clean Earth</p>
+            <div class="button_wrap">
+              <a href="#" class="store_background">
+                <img src="../img/3page/logo_googlestore.png" alt="google store logo">
+                <p>Play Store에서 다운로드</p>
+              </a>
+              <a href="#" class="store_background">
+                <img src="../img/3page/logo_apple.png" alt="appstore logo">
+                <p>App Store에서 다운로드</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Second project moaDo section -->
+    <section id="section_moado">
+      <div class="container">
+        <!-- moado title -->
+        <h2 class="title_text">모아두</h2>
+        <p class="sub_title_text">moaDo</p>
+        <!-- moaDo content -->
+        <div class="content">
+          <img src="../img/3page/proj_moado.png" alt="모아두 실행화면" class="image_moado_app">
+        </div>
+        <img src="../img/common/main-moado.png" alt="모아두를 사용하는 모습" class="image_moado_use">
+      </div>
+    </section>
+    <!-- ETC section -->
+    <section>
+      <div class="container">
+        <h2 class="title_text">ETC</h2>
+        <p class="sub_title_text">PROJECTS</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+  
+
+  
+  <!-- <script>
+    $(document).ready(function(){
+        $('.button-menu').click(function(){
+            if($('.nav').hasClass('close')){
+                $('.nav').addClass('more').removeClass('close');
+            }else if($('.nav').hasClass('more')){
+                $('.nav').addClass('close').removeClass('more');
+            }
+        });
+    });
+  </script> -->
+</body>
+</html>

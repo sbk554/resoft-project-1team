@@ -1,0 +1,141 @@
+/* header */
+/* navigation */
+.nav_wrap,
+.nav_wrap ul,
+.button-menu {
+  display: flex;
+  align-items: center;
+}
+.nav_wrap {
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1441px;
+  height: 80px;
+}
+.nav_wrap div {
+  display: flex;
+  height: 100%;
+}
+.nav_wrap ul li {
+  margin-left: 60px;
+}
+.button-home>img {
+  width: 133px;
+  height: auto;
+}
+.button-menu {
+  margin-left: 108px;
+}
+.button-menu>img {
+  width: 32px;
+  height: 32px;
+}
+.nav_list li {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.nav_list li:hover {
+  color: #184B9F;
+  border-bottom: 6px solid #184B9F;
+}
+/* top banner */
+.top_container{
+  background-image: url(../img/common/header_project.png);
+}
+/* section */
+.container {
+  margin: 0 auto;
+  width: 1441px;
+}
+#section_ecoce>.container {
+  height: 1000px;
+}
+.container>div {
+  display: flex;
+  justify-content: space-between;
+}
+.container>p {
+  margin-bottom: 54px;
+}
+/* ecoce left */
+.ecoce_background {
+  position: relative;
+  width: 678px;
+  height: 462px;
+  background-image: url(../img/3page/proj_ecoce_bg.png);
+}
+.image_ecoce_app {
+  position: absolute;
+  left: 229px;
+  top: 58px;
+}
+/* ecoce right */
+.ecoce_explain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text_explain {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: right;
+  line-height: 44px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.image_ecoce_logo {
+  margin-top: 150px;
+  width: 452px;
+}
+.ecoce_explain>p {
+  font-weight: 700;
+  font-size: 22px;
+  text-align: right;
+  line-height: 32px;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 32px;
+  margin-bottom: 140px;
+}
+/* download button */
+.button_wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.button_wrap>a {
+  display: flex;
+  width: 180px;
+  height: 40px;
+  padding: 8px;
+  margin-left: 30px;
+  border-radius: 50px;
+  background-color: black;
+}
+.button_wrap img {
+  margin: 0 10px;
+}
+.button_wrap p {
+  color: white;
+  line-height: 23px;
+}
+
+/* second seciton moado */
+#section_moado {
+  background: linear-gradient(217deg, transparent, transparent 70.71%),
+  linear-gradient(336deg, #E4CDE8, rgba(0,255,0,0) 70.71%),
+  linear-gradient(127deg, #339BE133, rgba(0,0,255,0) 70.71%);
+}
+#section_moado .container {
+  position: relative;
+  height: 686px;
+}
+.image_moado_app {
+  width: 850px;
+  height: 471px;
+}
+.image_moado_use {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform-origin: center center;
+}
