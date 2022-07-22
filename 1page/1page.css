@@ -415,11 +415,12 @@ header .container .display img{
     margin: 0 auto;
     transition: all 0.2s linear;
     opacity: 1;
+    background-color:#F9F9F9 ;
 }
 
 
 .eco img:hover{
-    
+    filter: brightness(40%);
     transform: scale(1.2)
     
 }
@@ -446,11 +447,73 @@ header .container .display img{
 }
 
 .moa img:hover{
+    filter: brightness(40%);
     transform: scale(1.2)
+}
+
+.moa img:hover img{
+    border-radius: 100px;
 }
 
 .pro_ani{
     position: absolute;
     top: 371px;
     left: 1000px;
+}
+
+.eco_text{
+    position:relative;
+}
+
+.text_1{
+    position: absolute;
+    visibility:hidden;
+    top: 520px;
+    left: 270px;
+}
+
+
+
+.text_1 h1{
+    font-size: 20px;
+    color: #ffffff;
+    
+}
+
+.text_1 h2{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.text_2{
+    position: absolute;
+    visibility:hidden;
+    left: 270px;
+    top: 970px;
+}
+
+.text_2 h3{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.text_2 h4{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.eco_text:hover{
+    opacity:1;
+}
+
+.eco_text:hover .text_1{
+    visibility:visible;
+}
+
+.moa_text:hover{
+    opacity:1;
+}
+
+.moa_text:hover .text_2{
+    visibility:visible;
 }
