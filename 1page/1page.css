@@ -55,7 +55,7 @@ body {
 
 /*헤더부분*/
 .header{
-    width: 100%;
+    width: 1920px;
     position: relative;
 }
 
@@ -273,6 +273,7 @@ header .container .display img{
 
 /*section 1*/
 #section1{
+    width: 1920px;
     position: relative;
     height: 700px;
 }
@@ -372,7 +373,7 @@ header .container .display img{
 
 /* section2 */
 .section2{
-    width: 100%;
+    width:1920px;
     height: 1147px;; 
     position: relative;
     background-color: #F9F9F9;
