@@ -518,3 +518,69 @@ header .container .display img{
 .moa_text:hover .text_2{
     visibility:visible;
 }
+
+/* section3 */
+
+#section3{
+    width: 1920px;
+    height: 1148px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.ser_text{
+    position: absolute;
+    text-align: left;
+    left: 240px;
+    top: 100px;
+}
+
+.ser_text h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.ser_text h2{
+    font-size: 18px;
+    color: #C8C8C8;
+    margin-bottom: 50px;
+}
+
+.ser_text h3{
+    font-size: 26px;
+}
+
+.img_ser img{
+    width: 300px;
+    height: 375px;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+}
+
+.img_ser img:hover{
+    transform: scale(1.2)
+}
+
+.ser_img1{
+    top: 100px;
+    left: 1000px;
+    position: absolute;
+}
+
+.ser_img2{
+    top: 555px;
+    left: 1000px;
+    position: absolute;
+}
+
+.ser_img3{
+    top: 218px;
+    left: 1380px;
+    position: absolute;
+}
+
+.ser_img4{
+    top: 673px;
+    left: 1380px;
+    position: absolute;
+}
