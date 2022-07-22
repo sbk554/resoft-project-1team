@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./1page.css">
+    <link rel="stylesheet" href="../wow/animate.css">
+    <script src="../wow/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <link rel="shortcut icon" href="../img/common/web.png" type="image/x-icon">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Resoft</title>
 </head>
 <body>
@@ -24,7 +29,7 @@
             <nav>                
                 <ul id="wrap_text">
                     <li><a href="#">회사소개</a>
-                        <ul class="nvi close">
+                        <ul class="nvi close" >
                             <li><a href="#">Resoft소개</a></li>
                                 <li><a href="#">연혁</a></li>
                                 <li><a href="#">조직도</a></li>
@@ -33,11 +38,11 @@
                         </ul>
                     </li>
 
-                    <li><a href="#">사업현황</a>
+                    <li><a href="../3page/3page.html">사업현황</a>
                         <ul class="nvi close">
-                            <li><a href="#">ECOCE</a></li>
-                            <li><a href="#">MoaDo</a></li>
-                            <li><a href="#">Etc</a></li>
+                            <li><a href="../3page/3page.html#section_ecoce">ECOCE</a></li>
+                            <li><a href="../3page/3page.html#section_moado">MoaDo</a></li>
+                            <li><a href="../3page/3page.html">Etc</a></li>
                         </ul>
                     </li>
 
@@ -52,7 +57,7 @@
         </div>
 
         <a href="#" class="btn">
-            <img src="../img/icon/ic_menu_wt.png" alt="">
+            <img src="../img/icon/ic_menu_wt.png" alt="" >
         </a>
 
         <div class="banner-wrap">
@@ -87,15 +92,15 @@
           </div>
     </header>
 
-<!---->
+<!--section 1-->
 
-<section id="section">
+<section id="section1">
 
     <div class="news">
 
     <div class="news_text">
         <h1>리소프트의 새로운 소식</h1>
-        <h5>Resoft news</h5>
+        <h5>RESOFT NEWS</h5>
     </div>
     
     <div class="news_img">
@@ -120,9 +125,37 @@
     </div>
     </div>
 </div>
-
 </section>
 
+<!-- section2 -->
+<section class="section2">
+        
+        <div class="pro_text">
+            <h1>프로젝트</h1>
+            <h2>RESOFT PROJECT</h2>
+            <h3>쾌적한 서비스 제공을 위해 사용자 입장에서<br> 생각하고 항상 새로운 도전을 시도합니다.</h3>
+        </div>
+        
+    <div class="eco_text">
+        <div class="eco">
+            <img src="../img/common/main_ecoce@2x.png">
+        </div>
+        <h1>에코스 ECOCE(ECO-Clean Earth)</h1>
+        <p>국내 최초<br>탄소중립 실천인증 플랫폼</p>
+    </div>
+
+    <div class="moa_text">
+        <div class="moa">
+            <img src="../img/common/main-moado@2x.png">
+        </div>
+        <h1>모아두 (moaDo)</h1>
+        <p>내 손안의 모바일 회원수첩</p>
+    </div>
+
+        <div class="pro_ani">
+            <lottie-player src="../img/animation/lf20_hk8wc3df.json" background="transparent" speed="1" style="width: 680px; height: 680px;" loop autoplay></lottie-player>
+        </div>
+</section>
 
 
 <!--NAV 슬라이드 -->
@@ -130,7 +163,7 @@
 console.clear();
 $('.display').slick({
     autoplay: true,
-    autoplaySpeed:2000,
+    autoplaySpeed:1500,
     
 });
 
