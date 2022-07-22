@@ -406,12 +406,12 @@ header .container .display img{
     width: 534px;
     height:393px;
     overflow: hidden;
+    border-radius: 90px;
 }
 
 .eco img{
     width: 534px;
     height:393px;
-    border-radius: 50px;
     margin: 0 auto;
     transition: all 0.2s linear;
     opacity: 1;
@@ -433,13 +433,13 @@ header .container .display img{
     width: 534px;
     height:393px;
     overflow: hidden;
+    border-radius: 90px;
 }
 
 
 .moa img{
     width: 534px;
     height:393px;
-    border-radius: 50px;
     margin: 0 auto;
     transition: all 0.2s linear;
     opacity: 1;
