@@ -567,7 +567,7 @@ header .container .display img{
     transform: scale(1.2)
 }
 .ser_img1:hover .ser_text1{
-    text-indent: 130px;
+    text-indent: 50px;
     opacity: 0;
 }
 .ser_img1:hover .ser_tx1{
@@ -580,7 +580,7 @@ header .container .display img{
     transform: scale(1.2)
 }
 .ser_img2:hover .ser_text2{
-    text-indent: 130px;
+    text-indent: 50px;
     opacity: 0;
 }
 .ser_img2:hover .ser_tx2{
@@ -593,7 +593,7 @@ header .container .display img{
     transform: scale(1.2)
 }
 .ser_img3:hover .ser_text3{
-    text-indent: 130px;
+    text-indent: 50px;
     opacity: 0;
 }
 .ser_img3:hover .ser_tx3{
@@ -606,7 +606,7 @@ header .container .display img{
     transform: scale(1.2)
 }
 .ser_img4:hover .ser_text4{
-    text-indent: 130px;
+    text-indent: 50px;
     opacity: 0;
 }
 .ser_img4:hover .ser_tx4{
