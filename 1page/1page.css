@@ -412,7 +412,7 @@ header .container .display img{
     width: 534px;
     height:393px;
     overflow: hidden;
-    border-radius: 90px;
+    border-radius: 20px;
 }
 
 .eco img{
@@ -425,7 +425,7 @@ header .container .display img{
 }
 
 
-.eco img:hover{
+.eco_text:hover img{
     filter: brightness(40%);
     transform: scale(1.2)
     
@@ -439,7 +439,7 @@ header .container .display img{
     width: 534px;
     height:393px;
     overflow: hidden;
-    border-radius: 90px;
+    border-radius: 20px;
 }
 
 
@@ -452,7 +452,7 @@ header .container .display img{
     background-image: url(../img/1page/bg_gradation.png);
 }
 
-.moa img:hover{
+.moa_text:hover img{
     filter: brightness(40%);
     transform: scale(1.2)
 }
@@ -467,28 +467,31 @@ header .container .display img{
     left: 1000px;
 }
 
-.eco_text{
-    position:relative;
-}
 
 .text_1{
     position: absolute;
     visibility:hidden;
-    top: 520px;
+    top: 500px;
     left: 270px;
+
 }
 
 
 
 .text_1 h1{
+    text-align: left;
     font-size: 20px;
     color: #ffffff;
+    margin-bottom: 10px;
     
 }
 
 .text_1 h2{
+    text-align: left;
     font-size: 15px;
     color: #ffffff;
+    font-family: none;
+    line-height:2
 }
 
 .text_2{
@@ -499,13 +502,17 @@ header .container .display img{
 }
 
 .text_2 h3{
+    text-align: left;
     font-size: 20px;
     color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .text_2 h4{
+    text-align: left;
     font-size: 15px;
     color: #ffffff;
+    font-family: none;
 }
 
 .eco_text:hover{
