@@ -1,0 +1,19 @@
+header{
+    height:80px;
+}
+
+header img{
+    position: relative;
+    top:20px;
+    left:360px;
+}
+
+.top_container{
+    width:100%;
+    max-width: 1920px;
+    height: 300px;
+}
+
+.top_overlay{
+    background-image: url(../img/common/header_news.png);
+}
