@@ -16,22 +16,51 @@
   <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
+  <!-- 네비게이션 (sticky 속성을 사용하기 위해 밖으로 뺐음) -->
+  <nav class="nav">
+    <div class="nav_wrap">
+        <!-- REsfot logo -->
+        <a href="../1page/1page.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="REsoft logo" class="logo_resoft"></a>
+        <div>
+          <ul class="nav_list">
+            <li>
+              <div>
+                <a href="../2page/2page.html">회사소개</a>
+              </div>
+              <ul class="nav_sublist">
+                <li>REsoft소개</li>
+                <li>연혁</li>
+                <li>조직도</li>
+                <li>특허&인증</li>
+                <li>오시는 길</li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                <a href="../3page/3page.html">사업현황</a>
+              </div>
+              <ul class="nav_sublist">
+                <li>ECOCE</li>
+                <li>moaDo</li>
+                <li>ETC</li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                <a href="../4page/4page.html">정보마당</a>
+              </div>
+              <ul class="nav_sublist">
+                <li>REsoft소식</li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#" class="button-menu"><img src="../img/icon/ic_menu_bk.png" alt="hamburger button"></a>
+        </div>
+    </div>
+    <div class="nav_submenu_background"></div>
+  </nav>
+
   <header>
-    <nav class="nav">
-      <div class="nav_wrap">
-          <!-- REsfot logo -->
-          <a href="../1page/1page.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="REsoft logo"></a>
-          <div>
-            <ul class="nav_list">
-              <li><a href="../2page/2page.html">회사소개</a></li>
-              <li><a href="../3page/3page.html">사업현황</a></li>
-              <li><a href="../4page/4page.html">정보마당</a></li>
-            </ul>
-            <a href="#" class="button-menu"><img src="../img/icon/ic_menu_bk.png" alt="hamburger button"></a>
-          </div>
-      </div>
-      <div class="nav close"></div>
-    </nav>
     <!-- top banner -->
     <div class="top_container">
       <div class="top_overlay">
@@ -39,6 +68,7 @@
       </div>
     </div>
   </header>
+
 
   <main role="main">
     <!-- First project ecoce section -->
@@ -48,7 +78,7 @@
         <h2 class="title_text">에코스</h2>
         <p class="sub_title_text">ECO-Clean Earth</p>
         <!-- ecoce content -->
-        <div>
+        <div class="ecoce_content_wrap">
           <!-- 이미지 -->
           <div class="ecoce_background">
             <img src="../img/3page/proj_ecoce_app.png" alt="에코스 앱 실행화면" class="image_ecoce_app">
@@ -59,19 +89,20 @@
             <img src="../img/3page/logo_ecoce.png" alt="에코스 로고" class="image_ecoce_logo">
             <p>ECO-Clean Earth</p>
             <div class="button_wrap">
-              <a href="#" class="store_background">
+              <a href="#" class="button-round-black">
                 <img src="../img/3page/logo_googlestore.png" alt="google store logo">
-                <p>Play Store에서 다운로드</p>
+                <p>Play Store에서<br>다운로드</p>
               </a>
-              <a href="#" class="store_background">
+              <a href="#" class="button-round-black">
                 <img src="../img/3page/logo_apple.png" alt="appstore logo">
-                <p>App Store에서 다운로드</p>
+                <p>App Store에서<br>다운로드</p>
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Second project moaDo section -->
     <section id="section_moado">
       <div class="container">
@@ -79,26 +110,59 @@
         <h2 class="title_text">모아두</h2>
         <p class="sub_title_text">moaDo</p>
         <!-- moaDo content -->
-        <div class="content">
-          <img src="../img/3page/proj_moado.png" alt="모아두 실행화면" class="image_moado_app">
+        <div class="moado_content_wrap">
+          <div class="moado_content_left">
+            <img src="../img/3page/proj_moado.png" alt="모아두 실행화면" class="image_moado_app">
+          </div>
+          <img src="../img/common/main-moado.png" alt="모아두를 사용하는 모습" class="image_moado_use">
+          <div class="moado_content_right">
+            <h3 class="text_explain">내 손 안의 모바일 회원 수첩</h3>
+            <img src="../img/3page/logo_moado.png" alt="moado logo" class="logo_moado">
+            <a class="button-moado button-round-black">
+              <p>사이트 바로가기</p>
+            </a>
+          </div>
         </div>
-        <img src="../img/common/main-moado.png" alt="모아두를 사용하는 모습" class="image_moado_use">
       </div>
     </section>
+
     <!-- ETC section -->
-    <section>
+    <section id="section_etc">
       <div class="container">
         <h2 class="title_text">ETC</h2>
         <p class="sub_title_text">PROJECTS</p>
+        <div class="etc_content_wrap">
+          <img src="../img/3page/proj_daegumaskwalk.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
+          <img src="../img/3page/proj_kua.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
+          <img src="../img/3page/proj_hansung.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
+          <img src="../img/3page/proj_knulab.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
+          <img src="../img/3page/proj_kibwa.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- footer -->
   <footer>
-
+    <div class="footer_container">
+      <img src="../img/common/logo_resoft.png" alt="리소프트 로고" class="logo_resoft">      
+      <p>&copy; RESOFT CO.LTD. All Rights Reserved.</p>
+      <div class="footer_wrap">
+        <div class="footer_wrap_left">
+          <p>상호 : (주)리소프트<br>
+            사업자등록번호 722-81-02219<br>
+            주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)
+          </p>
+        </div>
+        <div class="footer_wrap_right">
+          <P>대표이상 : 오유나 개인정보책임자 : 이현지<br>
+            전화 : (053) 475-2110 팩스 : (0504) 257-5966 이메일:call@resoft.kr
+          </P>
+        </div>
+      </div>
+    </div>
   </footer>
   
-
   
   <!-- <script>
     $(document).ready(function(){
