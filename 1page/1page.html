@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./1page.css">
+    <link rel="stylesheet" href="./magic.css">
     <link rel="stylesheet" href="../wow/animate.css">
     <script src="../wow/wow.min.js"></script>
     <script>new WOW().init();</script>
@@ -410,15 +411,23 @@ $('.stop').click(function(){
 <!--네비게이션바 추가메뉴-->
     <script>
         $(document).ready(function(){
-            $('.btn').click(function(){
-                if($('.nvi').hasClass('close')){
-                    $('.nvi').addClass('more').slideToggle().removeClass('close');
-                }else if($('.nvi').hasClass('more')){
-                    $('.nvi').addClass('close').slideToggle().removeClass('more');
-                }
+            $('.btn').click(function () {
+                if($('.nvi').hasClass('more'))
+                    $('.nvi').addClass('magictime tinUpOut');
+                else if($('.nvi').hasClass('close'))
+                    $('.nvi').removeClass('magictime tinUpOut');
+                });
             });
+    $(document).ready(function(){
+        $('.btn').click(function(){
+            if($('.nvi').hasClass('close')){
+                $('.nvi').addClass('magictime tinUpIn');
+                $('.nvi').addClass('more').removeClass('close');
+            }else if($('.nvi').hasClass('more')){
+                setTimeout(function() { $('.nvi').addClass('close').removeClass('more');}, 500);
+            }
         });
-            
+    });
 
     </script>
 
