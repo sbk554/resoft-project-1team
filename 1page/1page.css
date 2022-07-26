@@ -961,7 +961,7 @@ header .container .display img{
 @media screen and (max-width: 1280px){
     /* header */
     #wrapper{
-        padding: 10px 150px;
+        padding: 10px 12%;
     }
     #wrapper > nav + div{
         top: 90px;
@@ -1332,6 +1332,7 @@ header .container .display img{
         left: 10%;
     }
 }
+
 @media screen and (max-width: 714px){
     #section4 {
         height: 2100px;
