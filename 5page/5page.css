@@ -17,3 +17,42 @@ header img{
 .top_overlay{
     background-image: url(../img/common/header_news.png);
 }
+
+.post-article{
+    width: 1060px;
+}
+
+.post-title h3{
+    font-size: 24px;
+    letter-spacing: 1.2px;
+}
+
+.post-line{
+    border: 2px solid #184B9F;
+}
+
+.post-title .post-date{
+    font-size: 16px;
+    color: #aaaaaa;
+    letter-spacing: 0.8px;
+}
+
+.post-image{
+    width:1060px;
+}
+
+.post-image img{
+    max-width:100%;
+    border-radius: 20px;
+}
+
+.post-content{
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 0.8px;
+}
+.post-content p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

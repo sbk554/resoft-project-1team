@@ -22,7 +22,7 @@ body{
 .nav_wrap {
   justify-content: space-between;
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
   height: 80px;
 }
 .nav_wrap .logo_resoft{
@@ -34,7 +34,7 @@ body{
   /* border: 1px solid black; */
 }
 .nav_list>li {
-  padding-right: 60px;
+  padding-left: 60px;
 }
 .button-home>img {
   width: 133px;
@@ -42,7 +42,6 @@ body{
 }
 .button-menu {
   margin-left: 108px;
-  /* border: 1px solid black; */
 }
 .button-menu>img {
   width: 32px;
@@ -103,12 +102,16 @@ body{
 }
 /* section - 공통*/
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 100px auto 0; /* top left&right bottom*/
+  padding: 0 50px;
   /* border: 1px solid blue; */
 }
 
 /* section - ecoce */
+#section_ecoce {
+  overflow: hidden;
+}
 #section_ecoce>.container {
   /* height: 883px; */
 }
@@ -123,17 +126,28 @@ body{
 .ecoce_background {
   /* overflow: hidden; */
   position: relative;
-  width: 678px;
-  height: 462px;
-  margin-bottom: 250px;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* max-width: 679px; */
+  /* max-height: 592px; */
+  /* width: 100%; */
+  /* height: 100%; */
+  max-width: 100%;
+  max-height: 100%;
+  width: 679px;
+  height: 592px;
+  margin-bottom: 153px;
   background-image: url(../img/3page/proj_ecoce_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .image_ecoce_app {
-  /* float: right; */
-  /* height: 100%; */
+  max-width: 100%;
   position: absolute;
-  left: 229px;
-  top: 58px;
+  /* left: 229px; */
+  /* top: 58px; */
+  left: 35%;
+  top: 10%;
 }
 /* ecoce right */
 .ecoce_explain {
@@ -149,7 +163,10 @@ body{
 }
 .image_ecoce_logo {
   margin-top: 150px;
-  width: 452px;
+  /* width: 452px; */
+  /* width: 100%; */
+  /* max-width: 500px; */
+  max-width: 100%;
   z-index: 1;
 }
 .ecoce_explain>p {
@@ -164,10 +181,12 @@ body{
 .button_wrap {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 228px;
+  width: fit-content;
+  margin-bottom: 131px;
 }
 /* 검정 버튼 스타일 */
 .button-round-black {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   height: 57px;
@@ -181,6 +200,8 @@ body{
   font-weight: 500;
 }
 .button_wrap a {
+  width: 189px;
+  height: 57px;
   margin-left: 30px;
 }
 .button_wrap p {
@@ -198,19 +219,23 @@ body{
   /* height: 686px; */
 }
 .moado_content_wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 .image_moado_app {
-  width: 850px;
-  height: 471px;
-  /* border: 1px solid black; */
+  /* max-width: 850px;
+  width: 100%; */
+  max-width: 100%;
+  margin-bottom: 15%;
 }
-.image_moado_use {
+.image_use_moado {
   /* 왼쪽에서 460px, 오른쪽에서 300px */
   position: absolute;
-  left: 32%;
+  left: 50%;
   bottom: 0;
+  max-width: 100%;
+  transform: translate(-50%, 0);
 }
 /* .moado_content_right p{
   display: flex;
@@ -229,6 +254,7 @@ body{
   align-items: flex-end;
 }
 .moado_content_right .logo_moado{
+  max-width: 100%;
   margin-top: 150px;
 }
 .button-moado {
@@ -256,20 +282,21 @@ body{
 
 /* footer */
 footer {
-  width: auto;
-  height: 250px;
+  box-sizing: border-box;
+  width: 100%;
+  height: max-content;
+  overflow: auto;
   background-color: #E9E9E9;
   color: #9E9E9E;
+  padding: 0 50px;
 }
 .footer_container{
-  width: 1440px;
-  height: auto;
-  margin: 0 auto;
+  max-width: 1440px;
+  margin: 50px auto;
 }
 .footer_container .logo_resoft{
   width: 200px;
   height: auto;
-  margin-top: 50px;
 }
 .footer_container>p{
   display: inline;
@@ -278,70 +305,94 @@ footer {
   font-size: 16px;
   line-height: 24px;
 }
-.footer_wrap{
+.footer_info_wrap{
   display: flex;
+  width: 100%;
   font-weight: 300;
   font-size: 16px;
   line-height: 26px;
+  margin-top: 30px;
 }
 .footer_wrap_left{
-  margin-top: 30px;
+  flex: 1;
+  /* margin-left: 158px; */
 }
 .footer_wrap_right{
-  margin-top: 30px;
-  margin-left: 158px;
+  flex: 1;
+  /* margin-left: 158px; */
 }
 
 @media screen and (max-width: 1440px) {
-  .nav_wrap,
+  /* .nav_wrap,
   .container {
     width: 100%;
-  }
+  } */
   .moado_content_wrap {
     flex-direction: column-reverse;
     justify-content: flex-end;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
+  .nav_wrap {
+    max-width: 1000px;
+  }
+  .nav_wrap .logo_resoft {
+    margin-left: 90px;
+  }
   .nav_wrap .button-menu {
-    margin-left: 20px;
-    margin-right: 32px;
+    margin-left: 80px;
+  }
+  .container {
+    max-width: 1000px;
+    /* margin: 0 ; */
   }
   .ecoce_content_wrap{
     flex-direction: column-reverse;
     justify-content: flex-end;
   }
-  .image_moado_app {
-    width: 53.125rem;
-    height: 29.438rem;
-  }
-  .footer_container{
-    width: 1114px;
-  }
-  .footer_wrap_right{
-    margin-left: 60px;
+  .footer_wrap_left{
+    /* 사이에 여백 60px 추가 */
+    margin-right: 60px;
   }
 }
 @media screen and (max-width: 768px) {
+  .container{
+    padding: 0 30px;
+  }
+  .nav_wrap {
+    max-width: 704px;
+  }
   .nav_wrap .logo_resoft {
     margin-left: 32px;
   }
   .nav_wrap .button-menu {
+    margin-left: 0;
     margin-right: 32px;
   }
-  .nav_list{
-    visibility: hidden;
+  .nav_list {
+    display: none;
   }
-  footer {
-    height: 331px;
+  .button_wrap {
+    flex-direction: column;
+    margin-bottom: 30%;
   }
-  .footer_container{
-    width: 602px;
+  .button_wrap a:first-child {
+    margin-bottom: 10px;
   }
-  .footer_wrap{
+  .image_ecoce_app {
+    width: 70%;
+  }
+  .button-moado {
+    margin-bottom: 32%;
+  }
+  .image_use_moado {
+    width: 90%;
+  }
+  .footer_info_wrap {
     flex-direction: column;
   }
-  .footer_wrap_right{
-    margin-left: 0px;
+  .footer_wrap_left {
+    /* 기존에 있는 right값을 없애고 bottom에 30px 추가 */
+    margin: 0 0 30px 0;
   }
 }
