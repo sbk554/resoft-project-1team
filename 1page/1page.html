@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
     <title>Resoft</title>
 </head>
 <body>
@@ -156,7 +157,7 @@
     </div>
 
         <div class="pro_ani">
-            <lottie-player src="../img/animation/lf20_hk8wc3df.json" background="transparent" speed="1" style="width: 680px; height: 680px; position: absolute;" loop autoplay></lottie-player>
+            <lottie-player src="../img/animation/lf20_hk8wc3df.json" background="transparent" speed="1" style="width: 680px; height: 680px;" loop autoplay></lottie-player>
         </div>
 
         <div class="pro_ani1">
@@ -224,7 +225,7 @@
     </div>
 
     <div class="ser_ani">
-        <lottie-player src="../img/animation/lf20_4bfhlker.json" background="transparent" speed="1" style="width: 680px; height: 680px;margin-top: 350px; margin-left: 250px;position: absolute;" loop autoplay></lottie-player>
+        <lottie-player src="../img/animation/lf20_4bfhlker.json" background="transparent" speed="1" style="width: 680px; height: 680px;top: 33%; left: 13%; position: absolute;" loop autoplay></lottie-player>
     </div>
     <div class="ser_ani1">
         <lottie-player src="../img/animation/95306-animation.json" background="transparent" speed="1" style="width: 534px; height: 534px;position: absolute;" loop autoplay></lottie-player>
@@ -411,17 +412,15 @@ $('.stop').click(function(){
         $(document).ready(function(){
             $('.btn').click(function(){
                 if($('.nvi').hasClass('close')){
-                    $('.nvi').addClass('more').removeClass('close');
-
+                    $('.nvi').addClass('more').slideToggle().removeClass('close');
                 }else if($('.nvi').hasClass('more')){
-                    $('.nvi').addClass('close').removeClass('more');
+                    $('.nvi').addClass('close').slideToggle().removeClass('more');
                 }
             });
         });
-
             
-    </script>
 
+    </script>
 
 
 </body>
