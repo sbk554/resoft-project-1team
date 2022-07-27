@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./2page.css">
+    <link rel="stylesheet" href="../1page/magic.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>회사소개</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+    
+        <a class="img_wrap" href="../1page/1page.html">
+            <img src="../img/common/logo_resoft.png" alt="메인로고">
+        </a>
+
+        <div id="wrapper">
+            <nav>                
+                <ul id="wrap_text">
+                    <li><a href="./2page.html">회사소개</a>
+                        <ul class="nvi close">
+                            <li><a href="#">Resoft소개</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">특허&인증</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">사업현황</a>
+                        <ul class="nvi close">
+                            <li><a href="#">ECOCE</a></li>
+                            <li><a href="#">MoaDo</a></li>
+                            <li><a href="#">Etc</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">정보마당</a>
+                        <ul class="nvi close">
+                            <li><a href="#">Resoft소식</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nvi close"></div>
+        </div>
+
+        <a href="#" class="btn">
+            <img src="../img/icon/ic_menu_bk.png" alt="">
+        </a>
+       
+            <div class="display">
+                <img class="first on" src="../img/common/header_company.png">
+                <h1>회사소개</h1>
+            </div>
+    </header>
+
+    <!-- section1 -->
+    <section id="resoft">
+        <div class="re_text">
+            <h1>REsoft 소개</h1><br>
+            <h2>ABOUT US</h2>
+        </div>
+
+        <div class="re_text2">
+            <div class="re_tx">
+                <h1>회사명</h1><h2>(주)리소프트</h2>
+            </div>
+            <div class="re_tx2">
+                <h1>설립일</h1><h2>2021년 5월 6일</h2>
+            </div>
+            <div class="re_tx3">
+                <h1>대표이사</h1><h2>오유나</h2>
+            </div>
+            <div class="re_tx4">
+                <h1>주요 사업</h1><h2>모바일 플랫폼 개발</h2>
+            </div>
+            <div class="re_tx5">
+                <h1>본사</h1><h2>대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호</h2>
+            </div>
+            <div class="re_tx6">
+                <h1>부설연구소</h1><h2>대구광역시 수성구 알파시티1로 160, SW융합테크비즈센터(Dnex) 305호</h2>
+            </div>
+            <div class="re_tx7">
+                <h1>연락처</h1><h2>TEL. (053) 475-2110 / FAX. (0504) 257-5966 / E-mail. call@resoft.kr</h2>
+            </div>
+        </div>
+
+    </section>
+    
+
+    <!-- section2 -->
+    <section id="yunhyuk">
+        <div class="yh_text">
+            <h1>연혁</h1><br>
+            <h2>HISTORY</h2>
+        </div>
+
+        
+    </section>
+
+
+
+    <!--네비게이션바 추가메뉴-->
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function () {
+                if($('.nvi').hasClass('more'))
+                    $('.nvi').addClass('magictime tinUpOut');
+                else if($('.nvi').hasClass('close'))
+                    $('.nvi').removeClass('magictime tinUpOut');
+                });
+            });
+    $(document).ready(function(){
+        $('.btn').click(function(){
+            if($('.nvi').hasClass('close')){
+                $('.nvi').addClass('magictime tinUpIn');
+                $('.nvi').addClass('more').removeClass('close');
+            }else if($('.nvi').hasClass('more')){
+                setTimeout(function() { $('.nvi').addClass('close').removeClass('more');}, 1000);
+            }
+        });
+    });
+
+    </script>
+</body>
+</html>
