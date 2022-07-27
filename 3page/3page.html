@@ -20,13 +20,13 @@
   <nav class="nav">
     <div class="nav_wrap">
         <!-- REsfot logo -->
-        <a href="../1page/1page.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="REsoft logo" class="logo_resoft"></a>
+        <a href="../1page/1page.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="Button home" class="logo_resoft"></a>
         <div>
           <ul class="nav_list">
             <li>
-              <div>
+              <!-- <div> -->
                 <a href="../2page/2page.html">회사소개</a>
-              </div>
+              <!-- </div> -->
               <ul class="nav_sublist">
                 <li>REsoft소개</li>
                 <li>연혁</li>
@@ -36,25 +36,25 @@
               </ul>
             </li>
             <li>
-              <div>
+              <!-- <div> -->
                 <a href="../3page/3page.html">사업현황</a>
-              </div>
+              <!-- </div> -->
               <ul class="nav_sublist">
-                <li>ECOCE</li>
-                <li>moaDo</li>
-                <li>ETC</li>
+                <li><a href="#section_ecoce">ECOCE</a></li>
+                <li><a href="#section_moado">moaDo</a></li>
+                <li><a href="#section_etc">ETC</a></li>
               </ul>
             </li>
             <li>
-              <div>
+              <!-- <div> -->
                 <a href="../4page/4page.html">정보마당</a>
-              </div>
+              <!-- </div> -->
               <ul class="nav_sublist">
                 <li>REsoft소식</li>
               </ul>
             </li>
           </ul>
-          <a href="#" class="button-menu"><img src="../img/icon/ic_menu_bk.png" alt="hamburger button"></a>
+          <a href="javascript:void(0);" onclick="openCloseMenu(this);" class="button-menu"><img src="../img/icon/ic_menu_bk.png" alt="Button menu"></a>
         </div>
     </div>
     <div class="nav_submenu_background"></div>
@@ -163,6 +163,34 @@
     </div>
   </footer>
   
+  <!-- 세부메뉴 열기/닫기 -->
+  <script>
+    let submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
+    let sublists = document.getElementsByClassName('nav_sublist');
+
+    function openCloseMenu() {
+      if(submenuBack.style.display !== 'block') {
+        submenuBack.style.display = 'block';
+        
+        for (let list of sublists) {
+          list.style.display = 'block';
+        }
+      } else {
+        submenuBack.style.display = 'none';
+        
+        for (let list of sublists) {
+          list.style.display = 'none';
+        }
+      }
+    }
+
+    // let btnMenu = document.querySelector('.button-menu');
+    // let background = document.querySelector('nav_submenu_background');
+    // btnMenu.addEventListener('click', ()=>{
+    //   background.style.width = "263px";
+    // })
+
+  </script>
   
   <!-- <script>
     $(document).ready(function(){
