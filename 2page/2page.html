@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./2page.css">
     <link rel="stylesheet" href="../1page/magic.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=aefe3289ad8055c77f85adc77808a661"></script>
     <title>회사소개</title>
 </head>
 <body>
@@ -100,11 +101,141 @@
             <h1>연혁</h1><br>
             <h2>HISTORY</h2>
         </div>
+        
+        <div class="yh">
 
+            <div class="timeline">
+                <div class="outer">
+
+                    <div class="card">
+                        <div class="info">
+                            <h3 class="title">1</h3>
+                            <h4 class="title2">2022</h4>
+                          <p></p>
+                        </div>
+                      </div>
+
+                      <div class="jul">
+                  <div class="card">
+                    <div class="info">
+                        <h3 class="title">12</h3>
+                        <h4 class="title3">2021</h4>
+                      <p>대구여성인력개발센터 MOU 협약 (여성IT인재 현장실습)<br><br><br>
+                         대구가톨릭대학교 계약학과 MOU 협약 (ICTAI융합학과)<br><br><br>
+                        기업부설연구소(연구개발전담부서) 등록</p>
+                    </div>
+                  </div>
+                
+
+                  <div class="card">
+                    <div class="info">
+                        <h3 class="title">11</h3>
+                      <p>제 38류, 제 45류 상표등록 출원 (Mmate : 제 40-1799224호, 제 40-1799225호)</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="info">
+                        <h3 class="title">10</h3>
+                      <p>서울특별시 송파구청 앱 개발 (제8회 한성백제마라톤 비대면 대회)<br><br><br>
+                        대구광역시체육회 앱 개발 (2021 대구 마스크쓰햬 컬러풀 핫플 걷기)<br><br><br>
+                        대구광역시 달서구체육회 앱 개발 (제15회 언택트 달서 하프마라톤 대회) </p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="info">
+                        <h3 class="title">9</h3>
+                      <p>대구 경북지방중소벤처기업청 여성기업 등록</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="info">
+                        <h3 class="title">8</h3>
+                      <p>구미대학교 MOU 협약 (현장실습학기제)</p>
+                    </div>
+                </div>
+                
+                </div>
+                </div>
+                <div class="card1">
+                    <div class="info1">
+                        <h3 class="title4">5</h3>
+                      <p>(주)리소프트 회사 설립</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
         
     </section>
 
+    <!-- section3 -->
+    <section id="section3">
+        <div class="zo_text">
+            <h1>조직도</h1><br>
+            <h2>ORGANIZATION</h2>
+        </div>
 
+        </div>
+    </section>
+
+    <!-- section4 -->
+    <section id="section4">
+        <div class="pat_text">
+            <h1>특허 & 인증</h1><br>
+            <h2>CERTIFICATION & PATENT</h2>
+        </div>
+
+        <div class="zo_img">
+            <div class="zo_img1"><img src="../img/2page/bg_white.png"></div>
+            <div class="zo_img2"><img src="../img/2page/certificate.png"></div>
+            <div class="zo_img3"><img src="../img/2page/bg_white.png"></div>
+            <div class="zo_img4"><img src="../img/2page/bg_white.png"></div>
+            <div class="zo_img5"><img src="../img/2page/bg_white.png"></div>
+            <div class="zo_img6"><img src="../img/2page/bg_white.png"></div>
+            <div class="zo_img7"><img src="../img/2page/bg_white.png"></div>
+            <div class="zo_img8"><img src="../img/2page/bg_white.png"></div>
+            <div class="zo_img9"><img src="../img/2page/bg_white.png"></div>
+
+    </section>
+
+
+<!-- section5 -->
+    <section id="section5">
+
+        <div class="map_text">
+            <h1>오시는 길</h1><br>
+            <h2>DIRECTIONS</h2>
+        </div>
+
+        <div id="map" style="width:1440px;height:680px;top: 20%; left: -1%; z-index: 0;"></div>
+
+    </div>
+
+    </section>
+
+
+
+<!-- footer -->
+<footer id="footer">
+
+    <div class="fot_img">
+        <img src="../img/common/logo_resoft.png">
+    </div>
+
+
+    <div class="fot_text1">
+        <h1>© RESOFT CO.LTD. All Rights Reserved.</h1>
+    </div>
+
+    <div class="fot_text2">
+        <h1>상호 : (주)리소프트<br><br> 사업자등록번호 : 722-81-02219 <br><br>주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</h1>
+        <h2>대표이사 : 오유나 개인정보책임자 : 이현지<br><br>전화 : (053) 475-2110 팩스 : (0504) 257-5966 이메일 : call@resoft.kr</h2>
+    </div>
+
+
+</footer>
 
     <!--네비게이션바 추가메뉴-->
     <script>
@@ -126,6 +257,43 @@
             }
         });
     });
+
+    </script>
+
+    <!-- 카카오 맵 API -->
+    <script>
+        // 카카오 지도 api
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(35.871691843254716, 128.62496478375644), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+    
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    
+        // 마커가 표시될 위치입니다 
+        var markerPosition = new kakao.maps.LatLng(35.871691843254716, 128.62496478375644);
+    
+        var imageSrc = '../img/2page/marker.png', // 마커이미지의 주소입니다    
+            imageSize = new kakao.maps.Size(220, 45), // 마커이미지의 크기입니다
+            imageOption = {
+                offset: new kakao.maps.Point(27, 69)
+            }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+    
+        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            markerPosition = new kakao.maps.LatLng(35.871691843254716, 128.62496478375644); // 마커가 표시될 위치입니다
+    
+    
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition,
+            image: markerImage
+        });
+    
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+
 
     </script>
 </body>
