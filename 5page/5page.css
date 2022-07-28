@@ -18,13 +18,25 @@ header img{
     background-image: url(../img/common/header_news.png);
 }
 
+.post-section{
+    display:grid;
+    /* grid-template-columns: 1fr minmax(auto, 600px) 1fr; */
+    grid-template-columns: 1fr minmax(auto, 300px) minmax(auto, 1060px) 1fr;
+}
+
 .post-article{
-    width: 1060px;
+    padding-top: 234px;
+    max-width: 1060px;
+    width: 100%;
 }
 
 .post-title h3{
     font-size: 24px;
     letter-spacing: 1.2px;
+}
+
+.post-title {
+    margin-bottom: 30px;
 }
 
 .post-line{
@@ -38,11 +50,11 @@ header img{
 }
 
 .post-image{
-    width:1060px;
+    max-width:1060px;
 }
 
 .post-image img{
-    max-width:100%;
+    width:100%;
     border-radius: 20px;
 }
 
@@ -55,4 +67,36 @@ header img{
 .post-content p{
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.post-back-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.post-back-text h2{
+    font-size: 40px;
+}
+
+.post-back-text p{
+    font-size: 18px;
+    color: #c8c8c8
+}
+
+.post-back-icon {
+    align-items: center;
+    height:42px;
+    font-size: 16px;
+}
+
+.post-back-icon-box {
+    width:42px;
+    height:42px;
+    background-color: #111111;
+    border-radius:50% 50%;
+    margin-right:20px;
+}
+
+.post-back-icon-box img{
+    margin: 0 auto;
 }
