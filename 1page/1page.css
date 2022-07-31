@@ -74,7 +74,7 @@ body {
 #wrap_text {
     position: fixed;
     text-align: end;
-    padding-left: 44.5%;
+    left: 50%;
 }
 
 #wrapper {
@@ -88,6 +88,10 @@ body {
     border-bottom: 1px solid white;
     z-index: 10;
     
+}
+
+.btn{
+    cursor: pointer;
 }
 
 header #wrapper nav > ul > li > a {
@@ -932,6 +936,8 @@ header .container .display img{
     }
 }
 @media screen and (max-width: 1648px){
+
+    
     #section1{
         height: 1000px;
     }
@@ -945,12 +951,15 @@ header .container .display img{
     }
 }
 @media screen and (max-width: 1547px){
+
     #section4{
         height: 1300px;
     }
 }
 
 @media screen and (max-width: 1476px){
+
+    
     /* section2 */
     .eco{left: 0;}
     .moa{left: 0;}
@@ -970,8 +979,12 @@ header .container .display img{
 @media screen and (max-width: 1280px){
     /* header */
     #wrapper{
-        padding: 10px 12%;
+        padding: 10px 0;
     }
+    #wrap_text{
+        left: 31%;
+    }
+    
     #wrapper > nav + div{
         top: 90px;
         height:170px;
@@ -1178,6 +1191,9 @@ header .container .display img{
     }
 }
 @media screen and (max-width: 870px){
+    #wrap_text{
+        left: 19%
+    }
     /* section1 */
     .news_text{
         left:29% ;
@@ -1217,7 +1233,10 @@ header .container .display img{
     }
     header .img_wrap{
         left: 1%;
-        top: 3%;
+        top: 30%;
+    }
+    .img_wrap img {
+        right: 20px;
     }
     header #wrapper nav > ul ul{
         padding-left: 0;
