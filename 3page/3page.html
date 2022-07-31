@@ -19,18 +19,18 @@
   <!-- 네비게이션 (sticky 속성을 사용하기 위해 밖으로 뺐음) -->
   <nav class="nav">
     <div class="nav_wrap">
-        <!-- REsfot logo -->
+        <!-- REsoft logo -->
         <a href="../1page/1page.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="Button home" class="logo_resoft"></a>
         <div>
           <ul class="nav_list">
             <li>
-              <a href="../2page/2page.html">회사소개</a>
+              <a href="../3page/3page.html">회사소개</a>
               <ul class="nav_sublist">
-                <li>REsoft소개</li>
-                <li>연혁</li>
-                <li>조직도</li>
-                <li>특허&인증</li>
-                <li>오시는 길</li>
+                <li><a href="../2page/2page.html/#resoft">REsoft소개</a></li>
+                <li><a href="../2page/2page.html/#yunhyuk">연혁</a></li>
+                <li><a href="../2page/2page.html/#section3">조직도</a></li>
+                <li><a href="../2page/2page.html/#section4">특허&인증</a></li>
+                <li><a href="../2page/2page.html/#section5">오시는 길</a></li>
               </ul>
             </li>
             <li>
@@ -157,27 +157,49 @@
     </div>
   </footer>
   
-  <!-- 세부메뉴 열기/닫기 -->
   <script>
     let submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
     let sublists = document.getElementsByClassName('nav_sublist');
-
+    
+    // 세부 메뉴 열기/닫기
     function openCloseMenu() {
       if(submenuBack.style.display !== 'block') {
-        submenuBack.style.display = 'block';
-        
-        for (let list of sublists) {
-          list.style.display = 'block';
-        }
+        openMenu();
       } else {
-        submenuBack.style.display = 'none';
-        
-        for (let list of sublists) {
-          list.style.display = 'none';
-        }
+        closeMenu();
       }
     }
 
+    // 세부메뉴 열기
+    function openMenu() {
+      submenuBack.style.display = 'block';
+      console.log("open menu test")
+      
+      for (let list of sublists) {
+        list.style.display = 'block';
+      }
+    }
+
+    // 세부메뉴 닫기
+    function closeMenu() {
+      console.log("close menu test")
+      submenuBack.style.display = 'none';
+      
+      for (let list of sublists) {
+        list.style.display = 'none';
+      }
+    }
+
+    $(document).ready(function(){
+      for (let list of sublists) {
+        list.addEventListener('click', closeMenu());
+      }
+
+      $('.nav_sublist li').click(function(){
+        console.log("close menu test 2")
+        closeMenu();
+      });
+    });
     // let btnMenu = document.querySelector('.button-menu');
     // let background = document.querySelector('nav_submenu_background');
     // btnMenu.addEventListener('click', ()=>{

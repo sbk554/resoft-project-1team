@@ -1,16 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   box-sizing: border-box;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* header */
 /* navigation */
 /* 상단 고정 */
 .nav {
   position: sticky;
-  z-index: 10;
-  /* position: fixed; */
   top: 0;
+  z-index: 1;
   padding-right: 50px;
   background-color: white;
 }
@@ -100,6 +102,8 @@ body{
 
 /* top banner */
 .top_container{
+  position: relative;
+  /* top: 80px; */
   background-image: url(../img/common/header_project.png);
 }
 /* section - 공통*/
