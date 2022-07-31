@@ -452,8 +452,8 @@ header .display img{
     content: "";
     position: absolute;
     top: 28px;
-    left: 9.5%;
-    width: 80.3%;
+    left: 9.4%;
+    width: 80.5%;
     height: 2px;
     background: #9E9E9E;
 }
@@ -474,7 +474,7 @@ header .display img{
     content: "";
     position: absolute;
     bottom: 72%;
-    left: 43.9%;
+    left: 45.2%;
     transform: translateX(-50%);
     width: 2px;
     height: 70px;
