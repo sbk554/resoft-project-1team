@@ -213,6 +213,7 @@ body{
 #section_moado {
   background: linear-gradient(45deg, #339BE133, transparent 15%),
               linear-gradient(340deg, #E4CDE8, transparent 45%);
+  overflow: hidden;
   /* border: 5px solid red; */
 }
 #section_moado .container {
@@ -270,6 +271,7 @@ body{
 /* thrid section - ETC */
 #section_etc {
   margin-bottom: 200px;
+  overflow: hidden;
 }
 .etc_content_wrap {
   display: flex;
