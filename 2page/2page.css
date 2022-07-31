@@ -69,12 +69,12 @@ body {
 #wrap_text {
     position: fixed;
     text-align: end;
-    padding-left: 44.5%;
+    left: 50%;
 }
 #wrap_text a:hover{
     color: #184B9F;
 }
-#wrapper li::after {
+#wrap_text li::after {
     position: absolute; 
     content:""; 
     display: block; 
@@ -103,6 +103,9 @@ body {
     
 }
 
+.btn{
+    cursor: pointer;
+}
 header #wrapper nav > ul > li > a {
     display: block;
     position: relative;
@@ -372,7 +375,7 @@ header .display img{
     border: 3px solid #184B9F;
 }
 
-/* section */
+/* section3 */
 #section3{
     position: relative;
     width: 100%;
@@ -391,6 +394,110 @@ header .display img{
 .zo_text h2{
     font-size: 18px;
     color: #C8C8C8;
+}
+
+
+
+.zozic {
+    top: 24%;
+    max-width: 80%;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+  }
+.zozic h1{
+    color: #FFFFFF;
+    font-size: 26px;
+    padding: 30px;
+}
+.zozic h2{
+    font-size: 26px;
+    padding: 30px;
+}
+.zozic h3{
+    font-size: 26px;
+}
+
+
+.rectangle {
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+
+.zo_tx {
+    text-align: center;
+    width: 15%;
+    margin: 0 auto 40px;
+    background: #184B9F;
+    border-radius: 20px;
+}
+.zo_tx::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 49.7%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 70px;
+    background: #9E9E9E;
+  }
+
+.zo_tx2 {
+    position: relative;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+}
+.zo_tx2::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 9.5%;
+    width: 80.3%;
+    height: 2px;
+    background: #9E9E9E;
+}
+.zo_tx2::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: calc(100% + 20px);
+    height: 2px;
+    background: #9E9E9E;
+}
+.zo_tx2 li {
+    position: relative;
+}
+.zo_tx2 > li::before {
+    content: "";
+    position: absolute;
+    bottom: 72%;
+    left: 43.9%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 70px;
+    background: #9E9E9E;
+}
+.zo_tx3 {
+    text-align: center;
+    width: 102%;
+    top: 28%;
+    left: -5%;
+    margin: 0 auto 70px;
+    border-radius: 20px;
+    border: 3px solid #184B9F;
+}
+.zo_tx4 {
+    position: relative;
+    top: 25%;
+    margin: 0 auto;
+  }
+
+ 
+.zo_tx5{
+    text-align: left;
 }
 
 /* section4 */
@@ -414,7 +521,7 @@ header .display img{
     color: #C8C8C8;
 }
 
-.zo_img{
+.pat_img{
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -423,7 +530,7 @@ header .display img{
     width: calc(100%/1.5);
     height: 1150px;
 }
-.zo_img1{
+.pat_img1{
     max-width: 220px;
     max-height: 310px;
     overflow: hidden;
@@ -432,12 +539,12 @@ header .display img{
     left: 10%;
     top: 0;
 }
-.zo_img1 img{
+.pat_img1 img{
     max-width: initial;
     margin-left: -3%;
     margin-top: -9px;
 }
-.zo_img2{
+.pat_img2{
     max-width: 220px;
     max-height: 310px;
     overflow: hidden;
@@ -446,12 +553,12 @@ header .display img{
     left: 40%;
     top: 0;
 }
-.zo_img2 img{
+.pat_img2 img{
     max-width: initial;
     margin-left: -44%;
     margin-top: -43px;
 }
-.zo_img3{
+.pat_img3{
     max-width: 220px;
     max-height: 310px;
     overflow: hidden;
@@ -460,12 +567,12 @@ header .display img{
     left: 70%;
     top: 0;
 }
-.zo_img3 img{
+.pat_img3 img{
     max-width: initial;
     margin-left: -3%;
      margin-top: -9px;
 }
-.zo_img4{
+.pat_img4{
     max-width: 220px;
     max-height: 310px;
     overflow: hidden;
@@ -474,12 +581,12 @@ header .display img{
     left: 10%;
     top: 35%;
 }
-.zo_img4 img{
+.pat_img4 img{
     max-width: initial;
     margin-left: -3%;
      margin-top: -9px;
 }
-.zo_img5{
+.pat_img5{
     max-width: 220px;
     max-height: 310px;
     overflow: hidden;
@@ -488,12 +595,12 @@ header .display img{
     left: 40%;
     top: 35%;
 }
-.zo_img5 img{
+.pat_img5 img{
     max-width: initial;
     margin-left: -3%;
      margin-top: -9px;
 }
-.zo_img6{
+.pat_img6{
     max-width: 220px;
     max-height: 310px;
     overflow: hidden;
@@ -502,12 +609,12 @@ header .display img{
     left: 70%;
     top: 35%;
 }
-.zo_img6 img{
+.pat_img6 img{
     max-width: initial;
     margin-left: -3%;
      margin-top: -9px;
 }
-.zo_img7{
+.pat_img7{
     max-width: 220px;
     max-height: 310px;
     overflow: hidden;
@@ -516,12 +623,12 @@ header .display img{
     left: 10%;
     top: 70%;
 }
-.zo_img7 img{
+.pat_img7 img{
     max-width: initial;
     margin-left: -3%;
      margin-top: -9px;
 }
-.zo_img8{
+.pat_img8{
     max-width: 220px;
     max-height: 310px;
     overflow: hidden;
@@ -530,12 +637,12 @@ header .display img{
     left: 40%;
     top: 70%;
 }
-.zo_img8 img{
+.pat_img8 img{
     max-width: initial;
     margin-left: -3%;
      margin-top: -9px;
 }
-.zo_img9{
+.pat_img9{
     max-width: 220px;
     max-height: 310px;
     overflow: hidden;
@@ -544,12 +651,48 @@ header .display img{
     left: 70%;
     top: 70%;
 }
-.zo_img9 img{
+.pat_img9 img{
     max-width: initial;
     margin-left: -3%;
      margin-top: -9px;
 }
 
+/* section5 */
+.map_tx{
+    position: absolute;
+    display: flex;
+    left: 13%;
+    top: 73%;
+    width: 80%;
+    border-bottom: 2px solid #C8C8C8;
+}
+.map_tx h3{
+    font-size: 24px;
+    margin: 20px 10% 45px 21%;
+}
+.map_tx h4{
+    font-size: 20px;
+    color: #959595;
+    margin: 20px 0 45px 0;
+}
+
+.map_tx2{
+    position: absolute;
+    display: flex;
+    left: 13%;
+    top: 82%;
+    width: 80%;
+    border-bottom: 5px solid #C8C8C8;
+}
+.map_tx2 h3{
+    font-size: 24px;
+    margin: 20px 10% 65px 21.5%;
+}
+.map_tx2 h4{
+    font-size: 20px;
+    color: #959595;
+    margin: 20px 0px 65px 10px;
+}
 
 /* section5 */
 #section5{
