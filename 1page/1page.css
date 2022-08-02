@@ -62,7 +62,7 @@ body {
 
 .navi{
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     height: 80px;
 
@@ -74,7 +74,7 @@ body {
 #wrap_text {
     position: fixed;
     text-align: end;
-    left: 50%;
+    right: 18%;
 }
 
 #wrapper {
@@ -981,9 +981,6 @@ header .container .display img{
     #wrapper{
         padding: 10px 0;
     }
-    #wrap_text{
-        left: 31%;
-    }
     
     #wrapper > nav + div{
         top: 90px;
@@ -1191,9 +1188,6 @@ header .container .display img{
     }
 }
 @media screen and (max-width: 870px){
-    #wrap_text{
-        left: 19%
-    }
     /* section1 */
     .news_text{
         left:29% ;
@@ -1228,9 +1222,6 @@ header .container .display img{
     #wrapper{
         padding: 10px 0;
     }
-    #wrap_text{
-        text-align: center;
-    }
     header .img_wrap{
         left: 1%;
         top: 30%;
@@ -1246,7 +1237,6 @@ header .container .display img{
     }
     header #wrapper nav > ul > li > a{
         width: 130px;
-        left: 45%;
     }
     .header .bannerText {
         left: 75px;

@@ -69,7 +69,7 @@ body {
 #wrap_text {
     position: fixed;
     text-align: end;
-    left: 50%;
+    right: 18%;
 }
 #wrap_text a:hover{
     color: #184B9F;
@@ -763,9 +763,6 @@ header .display img{
     #wrapper{
         padding: 10px 232px 5px;
     }
-    #wrap_text{
-        left: 47%;
-    }
     .img_wrap img{
         left: -50%;
     }
@@ -836,6 +833,15 @@ header .display img{
         margin: 0px auto 44px;
         top: 28%;
     }
+    .zo_tx2 > li:nth-child(3)::before{
+        background: transparent;
+    }
+    .zo_tx2 > li:nth-child(4)::before{
+        background: transparent;
+    }
+    .zo_tx2 > li:nth-child(5)::before{
+        background: transparent;
+    }
     
 
     /* section4 */
@@ -877,9 +883,6 @@ header .display img{
 
 @media screen and (max-width: 768px){
     /* header */
-    #wrap_text {
-        left: 20%;
-    }
     .img_wrap img {
         left: -117%;
     }
@@ -933,7 +936,7 @@ header .display img{
     
     /* section4 */
     #section4{
-        height: 1454px;
+        height: 2400px;
     }
     .pat_text {
         left: 4%;
@@ -941,6 +944,43 @@ header .display img{
     .pat_img {
         width: 100%;
         left: -1%;
+        top: 14%;
+    }
+    .pat_img1{
+        top: 0;
+        left: 16%;
+    }
+    .pat_img2{
+        top: 0;
+        left: 57%;
+    }
+    .pat_img3{
+        top: 35%;
+        left: 16%;
+    }
+    .pat_img4{
+        top: 35%;
+        left: 57%;
+    }
+    .pat_img5{
+        top: 70%;
+        left: 16%;
+    }
+    .pat_img6{
+        top: 70%;
+        left: 57%;
+    }
+    .pat_img7{
+        top: 107%;
+        left: 16%;
+    }
+    .pat_img8{
+        top: 107%;
+        left: 57%;
+    }
+    .pat_img9{
+        top: 144%;
+        left: 16%;
     }
     /* section5 */
     .map_tx h3 {
