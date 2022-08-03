@@ -23,7 +23,7 @@
         <div>
           <ul class="nav_list">
             <li>
-              <a href="../3page/3page.html">회사소개</a>
+              <a href="../2page/2page.html">회사소개</a>
               <ul class="nav_sublist">
                 <li><a href="../2page/2page.html/#resoft">REsoft소개</a></li>
                 <li><a href="../2page/2page.html/#yunhyuk">연혁</a></li>
@@ -35,15 +35,15 @@
             <li>
               <a href="../3page/3page.html">사업현황</a>
               <ul class="nav_sublist">
-                <li><a href="#section_ecoce">ECOCE</a></li>
-                <li><a href="#moado">moaDo</a></li>
-                <li><a href="#section_etc">ETC</a></li>
+                <li><a href="../3page/3page.html/#section_ecoce">ECOCE</a></li>
+                <li><a href="../3page/3page.html/#moado">moaDo</a></li>
+                <li><a href="../3page/3page.html/#section_etc">ETC</a></li>
               </ul>
             </li>
             <li>
               <a href="../4page/4page.html">정보마당</a>
               <ul class="nav_sublist">
-                <li>REsoft소식</li>
+                <li><a href="#resoft_news">REsoft소식</a></li>
               </ul>
             </li>
           </ul>
@@ -74,72 +74,90 @@
       <div class="news_container">
         <!-- News item 1 -->
         <div class="news_item">
-          <img src="../img/common/news.png" alt="">
+          <div class="news_img_wrap">
+            <img src="../img/common/news@2x.png" alt="">
+          </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 2 -->
         <div class="news_item">
-          <img src="../img/common/news.png" alt="">
+          <div class="news_img_wrap">
+            <img src="../img/common/news@2x.png" alt="">
+          </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 3 -->
         <div class="news_item">
-          <img src="../img/common/news.png" alt="">
+          <div class="news_img_wrap">
+            <img src="../img/common/news@2x.png" alt="">
+          </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 4 -->
         <div class="news_item">
-          <img src="../img/common/news.png" alt="">
+          <div class="news_img_wrap">
+            <img src="../img/common/news@2x.png" alt="">
+          </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 5 -->
         <div class="news_item">
-          <img src="../img/common/news.png" alt="">
+          <div class="news_img_wrap">
+            <img src="../img/common/news@2x.png" alt="">
+          </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 6 -->
         <div class="news_item">
-          <img src="../img/common/news.png" alt="">
+          <div class="news_img_wrap">
+            <img src="../img/common/news@2x.png" alt="">
+          </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 7 -->
         <div class="news_item">
-          <img src="../img/common/news.png" alt="">
+          <div class="news_img_wrap">
+            <img src="../img/common/news@2x.png" alt="">
+          </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 8 -->
         <div class="news_item">
-          <img src="../img/common/news.png" alt="">
+          <div class="news_img_wrap">
+            <img src="../img/common/news@2x.png" alt="">
+          </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 9 -->
         <div class="news_item">
-          <img src="../img/common/news.png" alt="">
+          <div class="news_img_wrap">
+            <img src="../img/common/news@2x.png" alt="">
+          </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 10 -->
         <div class="news_item">
-          <img src="../img/common/news.png" alt="">
+          <div class="news_img_wrap">
+            <img src="../img/common/news@2x.png" alt="">
+          </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
         </div>
       </div>
 
       <!-- News page button Add -->
-      <button class="news_button_add">더보기</button>
-
+      <button class="news_button_more">더보기</button>
 
     </section>
-
   </main>
 
 
@@ -165,16 +183,58 @@
   </footer>
 
 
-  <!-- Javascript buton  -->
   <script>
-    let num = 4;
-    $(".news_container div:nth-child(n + " + (num + 1) + ")").addClass("is-hidden");
-    $(".news_button_add").on("click", function () {
-      $(".news_container div.is-hidden").slice(0, num).removeClass("is-hidden");
-      if ($(".news_button_add div.is-hidden").length == 0) {
-        $(".news_button_add").fadeOut();
+    // Navigation
+    let submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
+    let sublists = document.getElementsByClassName('nav_sublist');
+    // 세부 메뉴 열기/닫기
+    function openCloseMenu() {
+      if(submenuBack.style.display !== 'block') {
+        openMenu();
+      } else {
+        closeMenu();
+      }
+    }
+    // 세부메뉴 열기
+    function openMenu() {
+      submenuBack.style.display = 'block';
+      console.log("open menu test")
+      
+      for (let list of sublists) {
+        list.style.display = 'block';
+      }
+    }
+    // 세부메뉴 닫기
+    function closeMenu() {
+      console.log("close menu test")
+      submenuBack.style.display = 'none';
+      for (let list of sublists) {
+        list.style.display = 'none';
+      }
+    }
+    $(document).ready(function(){
+      $('.nav_sublist li').click(function(){
+        console.log("close menu test 2")
+        closeMenu();
+      });
+    });
+
+    // More button
+    let firstNum = 6
+    let addNum = 4;
+    $(".news_container div:nth-child(n + " + (firstNum + 1) + ")").addClass("is-hidden");
+    $(".news_button_more").on("click", function () {
+      $(".news_container div.is-hidden").slice(0, addNum).removeClass("is-hidden");
+      if ($(".news_button_more div.is-hidden").length == 0) {
+        $(".news_button_more").fadeOut();
       }
     });
+
+    // News items
+    $('.news_item').click(function(){
+      $(location).attr("href", "../5page/5page.html")  
+    });
+
   </script>
 
 </body>

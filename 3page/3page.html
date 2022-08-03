@@ -24,7 +24,7 @@
         <div>
           <ul class="nav_list">
             <li>
-              <a href="../3page/3page.html">회사소개</a>
+              <a href="../2page/2page.html">회사소개</a>
               <ul class="nav_sublist">
                 <li><a href="../2page/2page.html/#resoft">REsoft소개</a></li>
                 <li><a href="../2page/2page.html/#yunhyuk">연혁</a></li>
@@ -44,7 +44,7 @@
             <li>
               <a href="../4page/4page.html">정보마당</a>
               <ul class="nav_sublist">
-                <li>REsoft소식</li>
+                <li><a href="../4page/4page.html/#resoft_news">REsoft소식</a></li>
               </ul>
             </li>
           </ul>
@@ -158,9 +158,9 @@
   </footer>
   
   <script>
+    // Navigation
     let submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
     let sublists = document.getElementsByClassName('nav_sublist');
-    
     // 세부 메뉴 열기/닫기
     function openCloseMenu() {
       if(submenuBack.style.display !== 'block') {
@@ -169,7 +169,6 @@
         closeMenu();
       }
     }
-
     // 세부메뉴 열기
     function openMenu() {
       submenuBack.style.display = 'block';
@@ -179,7 +178,6 @@
         list.style.display = 'block';
       }
     }
-
     // 세부메뉴 닫기
     function closeMenu() {
       console.log("close menu test")
@@ -189,17 +187,20 @@
         list.style.display = 'none';
       }
     }
-
     $(document).ready(function(){
-      for (let list of sublists) {
-        list.addEventListener('click', closeMenu());
-      }
-
       $('.nav_sublist li').click(function(){
         console.log("close menu test 2")
         closeMenu();
       });
     });
+
+    // 메뉴 마우스 오버시 상세메뉴 열기
+    $('.nav_sublist li').hover(function(){
+      openMenu();
+    }, function() {
+      closeMenu();
+    });
+
     // let btnMenu = document.querySelector('.button-menu');
     // let background = document.querySelector('nav_submenu_background');
     // btnMenu.addEventListener('click', ()=>{
@@ -207,17 +208,6 @@
     // })
 
   </script>
-  
-  <!-- <script>
-    $(document).ready(function(){
-        $('.button-menu').click(function(){
-            if($('.nav').hasClass('close')){
-                $('.nav').addClass('more').removeClass('close');
-            }else if($('.nav').hasClass('more')){
-                $('.nav').addClass('close').removeClass('more');
-            }
-        });
-    });
-  </script> -->
+
 </body>
 </html>

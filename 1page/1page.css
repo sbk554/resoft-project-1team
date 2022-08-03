@@ -75,6 +75,7 @@ body {
     position: fixed;
     text-align: end;
     right: 18%;
+    
 }
 
 #wrapper {
@@ -87,7 +88,6 @@ body {
     box-sizing: border-box;
     border-bottom: 1px solid white;
     z-index: 10;
-    
 }
 
 .btn{
@@ -119,17 +119,20 @@ header #wrapper nav > ul > li > a {
     background: rgba(24, 75, 159, .7);
     transition: all 0.5s;
     z-index: -1;
+    
 }
 
 
 header #wrapper nav > ul >li {
     display: inline-block;
     position: relative;
+    
 }
 
 header #wrapper nav > ul ul li {
     line-height: 25px;
     padding-left: 0px;
+    
 }
 
 header #wrapper nav > ul ul a {
@@ -146,12 +149,14 @@ header #wrapper nav > ul ul {
     height: 230px;
     transition: all 0.5s;
     padding-left: 40px;
+    
 }
 
 .img_wrap img{
     position: absolute;
     width: 133px;
     height: 30px;
+    
 }
 
 header >a {
@@ -161,6 +166,7 @@ header >a {
     top: 30px;
     width: 50px;
     z-index: 100;
+    
 }
 
 header .img_wrap {
@@ -170,6 +176,7 @@ header .img_wrap {
     z-index: 100;
     margin-left: 20%;
     height: 30px;
+    
 }
 
 header .container .display img{
@@ -178,6 +185,7 @@ header .container .display img{
     filter: opacity(0.8) drop-shadow(0 0 0 rgb(0, 0, 0));
     display: block;
     position:relative;
+    
 }
 
 .display button{
@@ -292,6 +300,7 @@ header .container .display img{
 #section1{
     width: 100%;
     height: 700px;
+    
 }
 .news{
     position: relative;
@@ -322,6 +331,7 @@ header .container .display img{
 .news_tag_img{
     display: flex;  
     flex-wrap: wrap;
+    
 }
 
 .news_tag1, .news_tag2 ,.news_tag3{
@@ -365,7 +375,7 @@ header .container .display img{
 }
 
 .news_tag_img a:hover img{
-    transform: scale(1.2)
+    transform: scale(1.2);
     
     
 }
@@ -1456,13 +1466,16 @@ header .container .display img{
     #wrapper > nav + div {
         top: 78px;
         height: 170px;
-        width: 91%;
+        width: 100%;
     }
     header #wrapper nav > ul ul a{
         font-size: 12px;
     }
     #wrap_text{
-        right: 17%;
+        right: 25%;
+    }
+    .navi{
+        width: 100%;
     }
     header #wrapper nav > ul > li > a{
         font-size: 15px; 
@@ -1470,7 +1483,7 @@ header .container .display img{
     }
 
     .btn{
-        right: 5%;
+        right: 11%;
     }
 
     .header .bannerText{
@@ -1513,6 +1526,9 @@ header .container .display img{
         font-size: 8px;
         margin-top: 10px;
     }
+    .news_tag1, .news_tag3 {
+        margin: 30px 172px 0 0;
+    }
 
     /* section2 */
     .section2 {
@@ -1528,11 +1544,10 @@ header .container .display img{
         font-size: 15px;
     }
     .pro_ani1 {
-        left: 16%;
         top: 23%;
     }
     #pro_ani3{
-        width: 300px;
+        width: 100%; 
         height: 300px;
     }
     .eco {
@@ -1540,7 +1555,7 @@ header .container .display img{
         height: 190px;
     }
     .eco img{
-        width: 300px;
+        width: 312px;
         height: 190px;
     }
     .text_1 h1{
@@ -1560,7 +1575,7 @@ header .container .display img{
         height: 190px;
     }
     .moa img{
-        width: 300px;
+        width: 312px;
         height: 190px;
     }
     .text_2 h3{
