@@ -151,7 +151,17 @@ header #wrapper nav > ul ul {
     padding-left: 40px;
     
 }
-
+header #wrapper nav > ul ul>.wrap_tx2 a{
+    font-size: 30px;
+    color: #C8C8C8;
+}
+header #wrapper nav > ul ul> .wrap_tx2 {
+    line-height:40px ;
+}
+.wrap_tx2 {
+    opacity: 0;
+    display: none;
+}
 .img_wrap img{
     position: absolute;
     width: 133px;
@@ -1015,8 +1025,7 @@ header .container .display img{
     }
     
     #wrapper > nav + div{
-        top: 90px;
-        height:170px;
+        top: 80px;
     }
     .img_wrap img{
         right: 50px;
@@ -1263,6 +1272,10 @@ header .container .display img{
         left: 1%;
         top: 30%;
     }
+    .wrap_tx2{
+        opacity: 1;
+        display: block;
+    }
     .img_wrap img {
         right: 20px;
     }
@@ -1272,8 +1285,10 @@ header .container .display img{
     .nvi{
         left: 60%;
     }
+    
     header #wrapper nav > ul > li > a{
         width: 130px;
+        visibility: hidden;
     }
     .header .bannerText {
         left: 75px;
@@ -1468,6 +1483,7 @@ header .container .display img{
         height: 170px;
         width: 100%;
     }
+    
     header #wrapper nav > ul ul a{
         font-size: 12px;
     }
