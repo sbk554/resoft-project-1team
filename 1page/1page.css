@@ -683,7 +683,7 @@ header .container .display img{
 }
 .ser_text1 h2{
     font-size: 15px;
-    left: 100px;
+    left: 106px;
     top: 200px;
 }
 .ser_text1{
@@ -715,7 +715,7 @@ header .container .display img{
 }
 .ser_text2 h2{
     font-size: 15px;
-    left: 115px;
+    left: 91px;
     top: 200px;
 }
 .ser_text2{
@@ -740,13 +740,13 @@ header .container .display img{
     position: absolute;
 }
 .ser_text3 h1{
-    left: 60px;
+    left: 47px;
     top:150px;
     font-size: 30px;
 }
 .ser_text3 h2{
     font-size: 15px;
-    left: 95px;
+    left: 107px;
     top: 200px;
 }
 .ser_text3{
@@ -777,7 +777,7 @@ header .container .display img{
 }
 .ser_text4 h2{
     font-size: 15px;
-    left: 115px;
+    left: 116px;
     top: 200px;
 }
 .ser_text4{
@@ -876,6 +876,7 @@ header .container .display img{
     top: 7%;
     left: 13%;
     cursor: pointer;
+    padding-top: 35px;
     display: flex;
     flex-wrap: wrap;
     border-top: medium solid black;
@@ -1038,6 +1039,7 @@ header .container .display img{
     .news_img{
         width: calc(100% /1.8);
         left: 23%;
+        min-width: 550px;
     }
     .news_tag_img{
         flex-wrap: wrap;
@@ -1203,12 +1205,6 @@ header .container .display img{
     }
 }
 
-@media screen and (max-width: 1020px){
-    /* section2 */
-    .news_img{
-        width: 530px;
-    }
-}
 @media screen and (max-width: 1000px){
     #section4{
         height: 2100px;
@@ -1243,7 +1239,11 @@ header .container .display img{
         left: 13%;
     }
 }
-
+@media screen and (max-width: 830px){
+    .news_img{
+        left: 18%;
+    }
+}
 @media screen and (max-width: 768px){
     /* header */
     #wrapper{
@@ -1290,6 +1290,7 @@ header .container .display img{
     .news_img{
         left: 0;
         width: 100%;
+        min-width: 400px;
     }
     .news_text h1{
         margin-top: 100px;
@@ -1298,7 +1299,18 @@ header .container .display img{
     .news_text h5{
         margin-left: 32px;
     }
-
+    .news_tag_img{
+        width: 100%;
+    }
+    .news_tag4{
+        padding-right: 20px;
+    }
+    .news_tag_img img{
+        width: 100%;   
+    }
+    .news_tag1, .news_tag3{
+        margin: 30px 231px 0 0;
+    }
     /* section2 */
     .pro_text {
         text-align: right;
@@ -1316,19 +1328,31 @@ header .container .display img{
     }
     .pro_ani1 {
         left: 5%;
+        width: 94%;
     }
     #pro_ani2{
         position: absolute;
         width: 0%;
     }
     #pro_ani3{
+        width: 100%;
         position: absolute;
     }
     .eco {
-        left: 15%;
+        left: 15%;       
+        width: 69%;
+    }
+    .eco img{
+        width: 100%;
+        height: 100%;
     }
     .moa {
-        left: 15%;
+        left: 15%; 
+        width: 69%;
+    }
+    .moa img{
+        width: 100%;
+        height: 100%;
     }
 
     /* section3 */
@@ -1341,15 +1365,42 @@ header .container .display img{
     }
     .ser_ani1{
         left: 15%;
+        width: 74%;
+    }
+    #ser_ani3{
+        width: 100%;
     }
     .img_ser {
         left: 5%;
+        width: 40%;
     }
-    .ser_img2 {
-        left: 130%;
+    .ser_img2 {  
+        left: 127%;
     }
     .ser_img4 {
-        left: 130%;
+        left: 127%;
+    }
+    .ser_img1{
+        width: 100%;
+    }
+    .img_ser img{
+        width: 100%;
+    }
+
+    .ser_text1 h1{
+        left: 24%;
+        top: 39%;
+        font-size: 190%;
+    }
+    .ser_text1 h2 {
+        font-size: 94%;
+        left: 34%;
+        top: 53%;
+    }
+    .ser_tx1{
+        font-size: 114%;  
+        top: 36%;
+        left: -20%;
     }
 
     /* section4 */
@@ -1363,7 +1414,7 @@ header .container .display img{
         text-align: left;
     }
     .ico_box {
-        left: 2%;
+        left: 0;
         width: calc(100% / 1);
     }
 
@@ -1405,6 +1456,7 @@ header .container .display img{
     #wrapper > nav + div {
         top: 78px;
         height: 170px;
+        width: 91%;
     }
     header #wrapper nav > ul ul a{
         font-size: 12px;
@@ -1416,9 +1468,7 @@ header .container .display img{
         font-size: 15px; 
         width: 80px;
     }
-    .navi{
-        width: 100%;
-    }
+
     .btn{
         right: 5%;
     }
@@ -1446,8 +1496,11 @@ header .container .display img{
         margin-left: 10px;
         font-size: 10px;
     }
+    .news_img{
+        min-width: 300px;
+    }
     .news_tag_img{
-        height: 500px;
+        height: 470px;
     }
     .news_tag_img img{
         width: 150px;
