@@ -1284,6 +1284,7 @@ header .container .display img{
     }
     header #wrapper nav > ul ul{
         padding-left: 0;
+        left: -16%;
     }
     .nvi{
         left: 60%;
@@ -1483,12 +1484,18 @@ header .container .display img{
     }
     #wrapper > nav + div {
         top: 78px;
-        height: 170px;
+        height: 190px;
         width: 100%;
     }
     
     header #wrapper nav > ul ul a{
         font-size: 12px;
+    }
+    header #wrapper nav > ul ul>.wrap_tx2 a {
+        font-size: 20px;
+    }
+    header #wrapper nav > ul ul {
+        padding-top: 0;
     }
     #wrap_text{
         right: 14%;
