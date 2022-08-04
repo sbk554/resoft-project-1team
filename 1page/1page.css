@@ -1537,6 +1537,8 @@ header .container .display img{
     }
     .news_img{
         min-width: 300px;
+        left: 14px;
+        width: 95%;
     }
     .news_tag_img{
         height: 470px;
@@ -1559,6 +1561,9 @@ header .container .display img{
     /* section2 */
     .section2 {
         height: 1400px;
+    }
+    .pro_text{
+        left: -15%;
     }
     .pro_text h1{
         font-size: 25px;
