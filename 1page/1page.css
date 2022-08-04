@@ -1227,7 +1227,7 @@ header .container .display img{
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1020px){
     #section4{
         height: 2100px;
     }
@@ -1468,7 +1468,7 @@ header .container .display img{
     }
 }
 
-@media screen and (max-width: 714px){
+@media screen and (max-width: 734px){
     #section4 {
         height: 2100px;
     }
