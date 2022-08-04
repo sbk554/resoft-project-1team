@@ -1473,7 +1473,28 @@ header .container .display img{
         height: 2100px;
     }
 }
-
+@media screen and (max-width: 638px){
+    .ser_text1 h2{
+        top: 61%;
+    }
+    .ser_text2 h2{
+        left: 83px;
+        top: 244px;
+    }
+    .ser_text3 h2{
+        left: 76px;
+        top: 226px;
+    }
+    .ser_text4 h2{
+        left: 100px;
+        top: 227px;
+    }
+}
+@media screen and (max-width: 476px){
+    .ico_box>.ico_wrap{
+        width: 190px;
+    }
+}
 
 @media screen and (max-width: 430px){
     /* header */
