@@ -166,7 +166,7 @@ header #wrapper nav > ul ul> .wrap_tx2 {
     display: none;
 }
 .img_wrap img{
-    position: absolute;
+    position: fixed;
     width: 133px;
     height: 30px;
     
@@ -1031,7 +1031,7 @@ header .container .display img{
         top: 80px;
     }
     .img_wrap img{
-        right: 50px;
+        right: 75%;
     }
     .header .bannerText{
         left: 140px;
@@ -1280,7 +1280,8 @@ header .container .display img{
         display: block;
     }
     .img_wrap img {
-        right: 20px;
+        left: 5%;
+        margin: 0;
     }
     header #wrapper nav > ul ul{
         padding-left: 0;
