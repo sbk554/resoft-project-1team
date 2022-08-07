@@ -18,37 +18,37 @@
   <!-- 네비게이션 (sticky 속성을 사용하기 위해 밖으로 뺐음) -->
   <nav class="nav">
     <div class="nav_wrap">
-        <!-- REsoft logo -->
-        <a href="../1page/1page.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="Button home" class="logo_resoft"></a>
-        <div>
-          <ul class="nav_list">
-            <li>
-              <a href="../2page/2page.html">회사소개</a>
-              <ul class="nav_sublist">
-                <li><a href="../2page/2page.html/#resoft">REsoft소개</a></li>
-                <li><a href="../2page/2page.html/#yunhyuk">연혁</a></li>
-                <li><a href="../2page/2page.html/#section3">조직도</a></li>
-                <li><a href="../2page/2page.html/#section4">특허&인증</a></li>
-                <li><a href="../2page/2page.html/#section5">오시는 길</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="../3page/3page.html">사업현황</a>
-              <ul class="nav_sublist">
-                <li><a href="../3page/3page.html/#section_ecoce">ECOCE</a></li>
-                <li><a href="../3page/3page.html/#moado">moaDo</a></li>
-                <li><a href="../3page/3page.html/#section_etc">ETC</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="../4page/4page.html">정보마당</a>
-              <ul class="nav_sublist">
-                <li><a href="#resoft_news">REsoft소식</a></li>
-              </ul>
-            </li>
-          </ul>
-          <a href="javascript:void(0);" onclick="openCloseMenu(this);" class="button-menu"><img src="../img/icon/ic_menu_bk.png" alt="Button menu"></a>
-        </div>
+      <!-- REsoft logo -->
+      <a href="../1page/1page.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="Button logo" class="logo_resoft"></a>
+      <div>
+        <ul class="nav_list">
+          <li>
+          <a href="../2page/2page.html" class="nav_pagelink">회사소개</a>
+            <ul class="nav_sublist">
+              <li><a href="../2page/2page.html/#resoft">REsoft소개</a></li>
+              <li><a href="../2page/2page.html/#yunhyuk">연혁</a></li>
+              <li><a href="../2page/2page.html/#section3">조직도</a></li>
+              <li><a href="../2page/2page.html/#section4">특허&인증</a></li>
+              <li><a href="../2page/2page.html/#section5">오시는 길</a></li>
+            </ul>
+          </li>
+          <li>
+          <a href="../3page/3page.html" class="nav_pagelink">사업현황</a>
+            <ul class="nav_sublist">
+              <li><a href="../3page/3page.html/#section_ecoce">ECOCE</a></li>
+              <li><a href="../3page/3page.html/#moado">moaDo</a></li>
+              <li><a href="../3page/3page.html/#section_etc">ETC</a></li>
+            </ul>
+          </li>
+          <li>
+          <a href="#" class="nav_pagelink">정보마당</a>
+            <ul class="nav_sublist">
+              <li><a href="#resoft_news">REsoft소식</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="javascript:void(0);" onclick="openCloseMenu(this);" class="button-menu"><img src="../img/icon/ic_menu_bk.png" alt="Button menu"></a>
+      </div>
     </div>
     <div class="nav_submenu_background"></div>
   </nav>
@@ -164,24 +164,21 @@
   <!-- footer -->
   <footer>
     <div class="footer_container">
+      <div class="footer_logo_wrap">
       <img src="../img/common/logo_resoft.png" alt="리소프트 로고" class="logo_resoft">      
       <p>&copy; RESOFT CO.LTD. All Rights Reserved.</p>
+      </div>
       <div class="footer_info_wrap">
-        <div class="footer_wrap_left">
-          <p>상호 : (주)리소프트<br>
-            사업자등록번호 722-81-02219<br>
-            주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)
+        <p class="footer_info_left">상호 : (주)리소프트<br>
+          사업자등록번호 722-81-02219<br>
+          주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)
           </p>
-        </div>
-        <div class="footer_wrap_right">
-          <P>대표이상 : 오유나 개인정보책임자 : 이현지<br>
-            전화 : (053) 475-2110 팩스 : (0504) 257-5966 이메일:call@resoft.kr
-          </P>
-        </div>
+        <p class="footer_info_right">대표이상 : 오유나 개인정보책임자 : 이현지<br>
+          전화 : (053) 475-2110 팩스 : (0504) 257-5966 이메일:call@resoft.kr
+        </p>
       </div>
     </div>
   </footer>
-
 
   <script>
     // Navigation
@@ -189,7 +186,8 @@
     let sublists = document.getElementsByClassName('nav_sublist');
     // 세부 메뉴 열기/닫기
     function openCloseMenu() {
-      if(submenuBack.style.display !== 'block') {
+    // if(submenuBack.style.display !== 'block') {
+    if(submenuBack.style.opacity == 0) {
         openMenu();
       } else {
         closeMenu();
@@ -197,44 +195,50 @@
     }
     // 세부메뉴 열기
     function openMenu() {
-      submenuBack.style.display = 'block';
-      console.log("open menu test")
+      console.log("open menu")
+    // submenuBack.style.display = 'block';
+    submenuBack.style.opacity = 1;
       
       for (let list of sublists) {
-        list.style.display = 'block';
+      // list.style.display = 'block';
+      list.style.opacity = 1;
       }
     }
     // 세부메뉴 닫기
     function closeMenu() {
-      console.log("close menu test")
-      submenuBack.style.display = 'none';
+    console.log("close menu test")
+    // submenuBack.style.display = 'none';
+    submenuBack.style.opacity = 0;
+    
       for (let list of sublists) {
-        list.style.display = 'none';
+      // list.style.display = 'none';
+      list.style.opacity = 0;
       }
     }
+
     $(document).ready(function(){
       $('.nav_sublist li').click(function(){
         console.log("close menu test 2")
         closeMenu();
       });
-    });
 
-    // More button
-    let firstNum = 6
-    let addNum = 4;
-    $(".news_container div:nth-child(n + " + (firstNum + 1) + ")").addClass("is-hidden");
-    $(".news_button_more").on("click", function () {
-      $(".news_container div.is-hidden").slice(0, addNum).removeClass("is-hidden");
-      if ($(".news_button_more div.is-hidden").length == 0) {
-        $(".news_button_more").fadeOut();
-      }
-    });
+      // More button
+      let firstNum = 6
+      let addNum = 4;
+      $(".news_container div:nth-child(n + " + (firstNum + 1) + ")").addClass("is-hidden");
+      $(".news_button_more").on("click", function () {
+        $(".news_container div.is-hidden").slice(0, addNum).removeClass("is-hidden");
+        if ($(".news_button_more div.is-hidden").length == 0) {
+          $(".news_button_more").fadeOut();
+        }
+      });
 
-    // News items
-    $('.news_item').click(function(){
-      $(location).attr("href", "../5page/5page.html")  
-    });
+      // News items
+      $('.news_item').click(function(){
+        $(location).attr("href", "../5page/5page.html")  
+      });
 
+    });
   </script>
 
 </body>

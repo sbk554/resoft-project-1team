@@ -1,11 +1,34 @@
-header{
+#post-nav{
     height:80px;
+    max-width:1440px;
+    border-bottom: 1px solid #DBDBDB;
 }
 
-header img{
+#post-nav .post-logo{
     position: relative;
     top:20px;
     left:360px;
+}
+
+#post-nav>a {
+    display: block; /* a태그는 글자성격 = inline */
+    float: left;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 80px;
+    padding: 0 30px;
+}
+#post-nav>ul {
+    float: right;
+}
+#post-nav>ul li {
+    float: left;
+    padding: 0 30px;
+    line-height: 80px;
+}
+.nav-button{
+    border: none;
+    background-color: none;
 }
 
 .top_container{
@@ -41,6 +64,10 @@ header img{
 
 .post-line{
     border: 2px solid #184B9F;
+}
+
+.post-line-2nd{
+    margin-bottom: 30px;
 }
 
 .post-title .post-date{

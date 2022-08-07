@@ -156,9 +156,19 @@ header #wrapper nav > ul ul {
     transition: all 0.5s;
     padding-left: 40px;
 }
-
+header #wrapper nav > ul ul>.wrap_tx2 a{
+    font-size: 30px;
+    color: #C8C8C8;
+}
+header #wrapper nav > ul ul> .wrap_tx2 {
+    line-height:40px ;
+}
+.wrap_tx2 {
+    opacity: 0;
+    display: none;
+}
 .img_wrap img{
-    position: relative;
+    position: fixed;
     width: 133px;
     height: 30px;
 }
@@ -432,6 +442,7 @@ header .display img{
     margin: 0 auto 40px;
     background: #184B9F;
     border-radius: 20px;
+    min-width: 177px;
 }
 .zo_tx::before {
     content: "";
@@ -694,7 +705,6 @@ header .display img{
     margin: 20px 0px 65px 10px;
 }
 
-/* section5 */
 #section5{
     position: relative;
     width: 100%;
@@ -764,7 +774,7 @@ header .display img{
         padding: 10px 232px 5px;
     }
     .img_wrap img{
-        left: -50%;
+        right: 75%;
     }
     .display h1{
         left: 43%;
@@ -883,13 +893,25 @@ header .display img{
 
 @media screen and (max-width: 768px){
     /* header */
+    header #wrapper nav > ul ul {
+        padding-left: 0;
+        left: -16%;
+    }
     .img_wrap img {
-        left: -117%;
+        left: 5%;
+        margin: 0;
     }
     .display h1 {
         left: 40%;
     }
-
+    header #wrapper nav > ul > li > a{
+        width: 130px;
+        visibility: hidden;
+    }
+    .wrap_tx2{
+        opacity: 1;
+        display: block;
+    }
 
     /* section1 */
     .re_text {
@@ -932,6 +954,12 @@ header .display img{
     /* section3 */
     .zo_text {
         left: 4%;
+    }
+    .zo_tx2{
+        left: 9%;
+    }
+    .zozic{
+        justify-content: center;
     }
     
     /* section4 */
@@ -1010,5 +1038,266 @@ header .display img{
     .fot_text2 h2 {
         top: 75%;
         left: 10%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    /* HEADER */
+    header #wrapper nav > ul ul {
+        padding-top: 0;
+    }
+    header #wrapper nav > ul ul>.wrap_tx2 a {
+        font-size: 20px;
+    }
+    #wrapper > nav + div {
+        height: 190px;
+        top: 78px;
+    }
+    header #wrapper nav > ul ul a{
+        font-size: 12px;
+    }
+    header #wrapper nav > ul > li > a{
+        font-size: 15px;
+        width: 80px;
+    }
+    .display h1{
+        font-size: 30px;
+        left: 36%;
+    }
+
+    /* section1 */
+    #resoft{
+        height: 700px;
+    }
+    .re_text h1{
+        font-size: 20px;
+    }
+    .re_text h2{
+        font-size: 9px;
+    }
+    .re_tx h1, .re_tx2 h1, .re_tx3 h1, .re_tx4 h1, .re_tx5 h1, .re_tx6 h1, .re_tx7 h1{
+        font-size: 14px;
+        width: 114px;
+    }
+    .re_text2 h2{
+        font-size: 10px;
+    }
+    .re_text2{
+        top: 24%;
+    }
+
+    /* section2 */
+    #yunhyuk {
+        height: 1200px;
+    }
+    .yh_text{
+        top: 4%;
+    }
+    .yh_text h1{
+        font-size: 20px;
+    }
+    .yh_text h2{
+        font-size: 9px;
+    }
+    .timeline{
+        top: 9%;
+        left: 48%;
+        width: 32%;
+    }
+    .jul{
+        padding-top: 77px;
+    }
+    .title{
+        font-size: 16px;
+        top: 0px;
+    }
+    .title::after{
+        top: -4px;
+    }
+    .title2{
+        font-size: 25px;
+        left: -325%;
+    }
+    .title3{
+        font-size: 25px;
+    }
+    .info >p{
+        font-size: 11px;
+    }
+    .title4{
+        font-size: 16px;
+    }
+    .info1 >p{
+        font-size: 11px;
+    }
+
+    /* section3 */
+    #section3 {
+        height: 1100px;
+    }
+    .zo_text {
+        top: 4%;
+    }
+    .zo_text h1 {
+        font-size: 20px;
+    }
+    .zo_text h2 {
+        font-size: 9px;
+    }
+    .zozic {
+        top: 10%;
+    }
+    .zozic h1{
+        padding: 25px;
+        font-size: 13px;
+        left: -2%;
+    }
+    .zo_tx{
+        min-width: 140px;
+    }
+    .zo_tx2 {
+        width: 76%;
+        left: 6%;
+        min-width: 314px;
+    }
+    .zozic h2{
+        font-size: 13px;
+        padding: 21px;
+    }
+    .zozic h3{
+        font-size: 13px;
+    }
+    .zo_tx::before{
+        height: 50px;
+    }
+    .zo_tx2::before{
+        top: 9px;
+    }
+    .zo_tx2 > li::before{
+        height: 50px;
+        bottom: 75%;
+    }
+    .zo_tx3 {
+        margin: 0px auto 25px;
+        top: 25%;
+    }
+    /* section4 */
+    #section4 {
+        height: 1863px;
+    }
+    .pat_text{
+        top: 4%;
+    }
+    .pat_text h1 {
+        font-size: 20px;
+    }
+    .pat_text h2 {
+        font-size: 9px;
+    }
+    .pat_img{
+        top: 9%;
+    }
+    .pat_img1{
+        max-width: 150px;
+        max-height: 220px;
+        left: 5%;
+    }
+    .pat_img2{
+        max-width: 150px;
+        max-height: 220px;
+    }
+    .pat_img2 img{
+        width: 275px;
+        margin-left: -41%;
+        margin-top: -30px;
+    }
+    .pat_img3{
+        max-width: 150px;
+        max-height: 220px;
+        top: 29%;
+        left: 5%;
+    }
+    .pat_img4{
+        max-width: 150px;
+        max-height: 220px;
+        top: 29%
+    }
+    .pat_img5{
+        max-width: 150px;
+        max-height: 220px;
+        top: 59%;
+        left: 5%;
+    }
+    .pat_img6{
+        max-width: 150px;
+        max-height: 220px;
+        top: 59%;
+    }
+    .pat_img7{
+        max-width: 150px;
+        max-height: 220px;
+        top: 90%;
+        left: 5%;
+    }
+    .pat_img8{
+        max-width: 150px;
+        max-height: 220px;
+        top: 90%;
+    }
+    .pat_img9{
+        max-width: 150px;
+        max-height: 220px;
+        top: 119%;
+        left: 5%;
+    }
+
+
+    /* section5 */
+    #section5 {
+        height: 800px;
+    }
+    .map_text{
+        top: 4%;
+    }
+    .map_text h1 {
+        font-size: 20px;
+    }
+    .map_text h2 {
+        font-size: 9px;
+    }
+    .map_tx h3{
+        font-size: 12px;
+    }
+    .map_tx h4{
+        font-size: 10px;
+    }
+    .map_tx2 h3{
+        font-size: 12px;
+        margin: 20px 4% 40px 4%;
+    }
+    .map_tx2 h4{
+        font-size: 10px;
+        margin: 20px 0px 40px 10px;
+    }
+
+    /* footer */
+    .fot_img {
+        top: 9%;
+        left: 8%;
+    }
+    .fot_text1 {
+        left: 7%;
+        font-size: 11px;
+    }
+    .fot_text2 h1 {
+        top: 41%;
+        left: 7%;
+        font-size: 11px;
+
+    }
+    .fot_text2 h2 {
+        top: 70%;
+        left: 7%;
+        font-size: 11px;
     }
 }
