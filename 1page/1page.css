@@ -74,7 +74,7 @@ body {
 #wrap_text {
     position: fixed;
     text-align: end;
-    right: 19%;
+    right: 21%;
 }
 
 #wrapper {
@@ -174,7 +174,7 @@ header #wrapper nav > ul ul> .wrap_tx2 {
 header >a {
     position: fixed;
     display: flex;
-    right: 12.5%;
+    right: 15%;
     top: 25px;
     width: 50px;
     z-index: 100;
@@ -186,7 +186,7 @@ header .img_wrap {
     left: 30px;
     top: 25px;
     z-index: 100;
-    margin-left: 15%;
+    margin-left: 17.5%;
     height: 30px;
     
 }
