@@ -69,7 +69,7 @@ body {
 #wrap_text {
     position: fixed;
     text-align: end;
-    right: 18%;
+    right: 19%;
 }
 #wrap_text a:hover{
     color: #184B9F;
@@ -109,11 +109,11 @@ body {
 header #wrapper nav > ul > li > a {
     display: block;
     position: relative;
-    width: 160px;
+    width: 130px;
     height: 70px;
     font-size: 20px;
     color: black;
-    line-height: 70px;
+    line-height: 63px;
     top: 0px;
     z-index: 10;
     text-align: center;
@@ -176,8 +176,8 @@ header #wrapper nav > ul ul> .wrap_tx2 {
 header >a {
     position: fixed;
     display: flex;
-    right: 10%;
-    top: 30px;
+    right: 12.7%;
+    top: 25px;
     width: 50px;
     z-index: 100;
 }
@@ -187,9 +187,9 @@ header >a {
 header .img_wrap {
     position: absolute;
     left: 30px;
-    top: 30px;
+    top: 25px;
     z-index: 100;
-    margin-left: 20%;
+    margin-left: 15.3%;
     height: 30px;
 }
 
@@ -301,7 +301,6 @@ header .display img{
 
 .timeline {
     position: absolute;
-    background: var(--primary-color);
     margin: 20px auto;
     padding: 20px;
     top: 20%;
@@ -397,6 +396,7 @@ header .display img{
     position: absolute;
     left: 13%;
     top: 10%;
+    cursor: pointer;
 }
 
 .zo_text h1{
@@ -958,9 +958,11 @@ header .display img{
     .zo_tx2{
         left: 9%;
     }
-    .zozic{
-        justify-content: center;
+    
+    .zo_tx2 li{
+        margin: 0px auto 25px 0;
     }
+    
     
     /* section4 */
     #section4{
@@ -1040,6 +1042,152 @@ header .display img{
         left: 10%;
     }
 }
+@media screen and (max-width: 685px){
+    .zozic h1{
+        padding: 25px;
+        font-size: 20px;
+        left: -2%;
+    }
+    .zo_tx{
+        min-width: 120px;
+        width: 30%;
+    }
+    .zo_tx2 {
+        width: 76%;
+        left: 6%;
+        min-width: 314px;
+    }
+    .zozic h2{
+        font-size: 20px;
+        padding: 21px;
+    }
+    .zozic h3{
+        font-size: 20px;
+    }
+    .zo_tx::before{
+        height: 50px;
+    }
+    .zo_tx2::before{
+        top: 9px;
+    }
+    .zo_tx2 > li::before{
+        height: 50px;
+        bottom: 79%;
+    }
+    .zo_tx3 {
+        margin: 0px auto 25px;
+        top: 21%
+    }
+}
+@media screen and (max-width: 610px){
+    /* 연혁 */
+    #yunhyuk {
+        height: 1600px;
+    }
+    .timeline{
+        top:13%;
+        left: 48%;
+        width: 26%;
+        min-width: 135px;
+    }
+    .jul{
+        padding-top: 77px;
+    }
+    .title{
+        font-size: 20px;
+        top: 0px;
+    }
+    .title::after{
+        top: -4px;
+    }
+    .title2{
+        font-size: 28px;
+        left: -318%;
+    }
+    .title3{
+        font-size: 28px;
+    }
+    .info >p{
+        font-size: 15px;
+    }
+    .title4{
+        font-size: 20px;
+    }
+    .info1 >p{
+        font-size: 15px;
+    }
+
+    /* 조직도 */
+    .zozic h1{
+        padding: 25px;
+        font-size: 13px;
+        left: -2%;
+    }
+    .zo_tx{
+        min-width: 140px;
+    }
+    .zo_tx2 {
+        width: 50%;
+        left: 4%;
+        min-width: 314px;
+    }
+    .zozic h2{
+        font-size: 13px;
+        padding: 21px;
+    }
+    .zozic h3{
+        font-size: 13px;
+    }
+    .zo_tx::before{
+        height: 50px;
+    }
+    .zo_tx2::before{
+        top: 9px;
+    }
+    .zo_tx2 > li::before{
+        height: 50px;
+        bottom: 75%;
+    }
+    .zo_tx3 {
+        margin: 0px auto 25px;
+        top: 25%;
+    }
+}
+@media screen and (max-width: 516px){
+    .pat_img1{
+        left: 4%;
+    }
+    .pat_img2{
+        left: 51%;
+    }
+    .pat_img3{
+        left: 4%;
+    }
+    .pat_img4{
+        left: 51%;
+    }
+    .pat_img5{
+        left: 4%;
+    }
+    .pat_img6{
+        left: 51%;
+    }
+    .pat_img7{
+        left: 4%;
+    }
+    .pat_img8{
+        left: 51%;
+    }
+    .pat_img9{
+        left: 4%;
+    }
+
+}
+@media screen and (max-width: 482px){
+    #resoft{
+        height: 1000px;
+    }
+}
 
 @media screen and (max-width: 430px){
     /* HEADER */
@@ -1103,6 +1251,7 @@ header .display img{
         top: 9%;
         left: 48%;
         width: 32%;
+        min-width: 120px;
     }
     .jul{
         padding-top: 77px;

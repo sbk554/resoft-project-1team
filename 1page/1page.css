@@ -74,8 +74,7 @@ body {
 #wrap_text {
     position: fixed;
     text-align: end;
-    right: 18%;
-    
+    right: 20%;
 }
 
 #wrapper {
@@ -97,11 +96,11 @@ body {
 header #wrapper nav > ul > li > a {
     display: block;
     position: relative;
-    width: 160px;
+    width: 130px;
     height: 70px;
     font-size: 20px;
     color: white;
-    line-height: 70px;
+    line-height: 63px;
     text-decoration: none;
     top: 0px;
     z-index: 10;
@@ -175,8 +174,8 @@ header #wrapper nav > ul ul> .wrap_tx2 {
 header >a {
     position: fixed;
     display: flex;
-    right: 10%;
-    top: 30px;
+    right: 13.7%;
+    top: 25px;
     width: 50px;
     z-index: 100;
     
@@ -185,9 +184,9 @@ header >a {
 header .img_wrap {
     position: absolute;
     left: 30px;
-    top: 30px;
+    top: 25px;
     z-index: 100;
-    margin-left: 20%;
+    margin-left: 15%;
     height: 30px;
     
 }

@@ -352,8 +352,14 @@
     
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
-
-
     </script>
+
+<script>
+    $( document ).ready( function() {
+      $( '.zo_text' ).click( function() {
+        $( '.zozic' ).fadeToggle();
+      } )
+    } );
+  </script>
 </body>
 </html>

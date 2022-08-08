@@ -44,7 +44,15 @@
 .post-section{
     display:grid;
     /* grid-template-columns: 1fr minmax(auto, 600px) 1fr; */
-    grid-template-columns: 1fr minmax(auto, 300px) minmax(auto, 1060px) 1fr;
+    /* grid-template-columns: 1fr minmax(auto, 300px) minmax(auto, 1060px) 1fr; */
+    grid-template-columns: 1fr minmax(auto, 1400px) 1fr;
+}
+
+@media (min-width:1000px){
+    .post-main-div{
+        display:grid;
+        grid-template-columns: minmax(auto, 300px) minmax(auto, 1060px);
+    }
 }
 
 .post-article{
