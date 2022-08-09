@@ -75,6 +75,7 @@ body {
     position: fixed;
     text-align: end;
     right: 21%;
+    font-weight: 700;
 }
 
 #wrapper {
@@ -151,14 +152,16 @@ header #wrapper nav > ul ul {
     
 }
 header #wrapper nav > ul ul>.wrap_tx2 a{
-    font-size: 30px;
-    color: #C8C8C8;
+    font-size: 20px;
+    color: #ffffff;
+    
 }
 header #wrapper nav > ul ul>.wrap_tx2 a:hover{
     color: #184B9F;
 }
 header #wrapper nav > ul ul> .wrap_tx2 {
-    line-height:40px ;
+    line-height: 25px;
+    padding-bottom: 15px;
 }
 .wrap_tx2 {
     opacity: 0;
@@ -191,7 +194,7 @@ header .img_wrap {
     
 }
 
-header .container .display img{
+.display img{
     width: 100%;
     height: 900px;
     filter: opacity(0.8) drop-shadow(0 0 0 rgb(0, 0, 0));
@@ -395,6 +398,7 @@ header .container .display img{
 .news_tag_img a h2{
     color: #1E1E1E;
     font-size: 18px;
+    padding-top: 10px;
 }
 
 .news_tag_img a:hover h2{
@@ -947,6 +951,7 @@ header .container .display img{
     text-align: left;
     top: 71px;
     left: 460px;
+    font-weight: 300;
 
 }
 
@@ -957,6 +962,7 @@ header .container .display img{
     text-align: left;
     top: 125px;
     left: 240px;
+    font-weight: 300;
 }
 .fot_text2 h2{
     color: #9E9E9E;
@@ -965,6 +971,7 @@ header .container .display img{
     text-align: left;
     top: 125px;
     left: 1000px;
+    font-weight: 300;
 }
 @media screen and (max-width: 1685px){
     /* section2 */
@@ -1149,7 +1156,7 @@ header .container .display img{
     }
     .ser_text{
         text-align: center;
-        left: 25%;
+        left: 28%;
     }
     .ser_text h2{
         left: 43%;
@@ -1163,7 +1170,7 @@ header .container .display img{
         position: absolute;
         opacity: 1;
         top: 16%;
-        left: 25%;
+        left: 29%;
     }
     .img_ser{
         left: 24%;
@@ -1284,12 +1291,27 @@ header .container .display img{
     }
     header #wrapper nav > ul ul{
         padding-left: 0;
-        left: -16%;
+        left: 12%;
+    }
+    header #wrapper nav > ul ul>.wrap_tx2::after{
+        position: absolute; 
+        content:""; 
+        display: block; 
+        border-bottom: 1px solid #FFFFFF;
+        width: 1000%;
+        left: -341%;
+        bottom: 78%;
     }
     .nvi{
         left: 60%;
     }
-    
+    .img_box{
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .display img{
+        width: 200%;
+    }
     header #wrapper nav > ul > li > a{
         width: 130px;
         visibility: hidden;
@@ -1308,6 +1330,9 @@ header .container .display img{
     }
     .display button.slick-next {
         left: 193px;
+    }
+    header >a{
+        right: 3%;
     }
 
     /* section1 */
@@ -1338,12 +1363,13 @@ header .container .display img{
         width: 100%;   
     }
     .news_tag1, .news_tag3{
-        margin: 30px 231px 0 0;
+        margin: 30px 231px 0 18px;
     }
     /* section2 */
     .pro_text {
         text-align: right;
-        left: 38%;
+        left: 0;
+        right: 4%;
         
     }
     .pro_text h2 {
@@ -1443,8 +1469,9 @@ header .container .display img{
         text-align: left;
     }
     .ico_box {
-        left: 0;
-        width: calc(100% / 1);
+        left: 18px;
+        width: 94%;
+
     }
 
     /* footer */
@@ -1468,7 +1495,7 @@ header .container .display img{
     }
 }
 
-@media screen and (max-width: 734px){
+@media screen and (max-width: 759px){
     #section4 {
         height: 2100px;
     }
@@ -1490,6 +1517,16 @@ header .container .display img{
         top: 227px;
     }
 }
+@media screen and (max-width: 504px){
+    #wrap_text{    
+    right: 6%;
+    }
+}
+@media screen and (max-width: 506px){
+    #section4 {
+        height: 3800px;
+    }
+}
 @media screen and (max-width: 476px){
     .ico_box>.ico_wrap{
         width: 190px;
@@ -1502,6 +1539,9 @@ header .container .display img{
         width: 100px;
         height: 25px;
         right: -17px;
+    }
+    header #wrapper nav > ul ul>.wrap_tx2::after{
+        bottom: 84%;
     }
     #wrapper > nav + div {
         top: 78px;
@@ -1752,6 +1792,9 @@ header .container .display img{
     }
 
     /* section4 */
+    #section4 {
+        height: 2100px;
+    }
     .ico_box>.ico_wrap {
         width: 165px;
         height: 100px;

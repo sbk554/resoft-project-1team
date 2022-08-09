@@ -70,6 +70,7 @@ body {
     position: fixed;
     text-align: end;
     right: 21%;
+    font-weight: 700;
 }
 #wrap_text a:hover{
     color: #184B9F;
@@ -78,15 +79,15 @@ body {
     position: absolute; 
     content:""; 
     display: block; 
-    border-bottom: 5px solid #184B9F;
+    border-bottom: 6px solid #184B9F;
     border-radius: 50px; 
     transition: width 500ms ease-in-out; 
-    bottom: 20%;
-    left: 25%; 
+    bottom: 15%;
+    left: 22%; 
     width: 0;
 }
 .wrap_tx:hover::after {
-    width: 50%;
+    width: 57%;
 }
 
 
@@ -157,11 +158,12 @@ header #wrapper nav > ul ul {
     padding-left: 40px;
 }
 header #wrapper nav > ul ul>.wrap_tx2 a{
-    font-size: 30px;
-    color: #C8C8C8;
+    font-size: 20px;
+    color: #ffffff;
 }
 header #wrapper nav > ul ul> .wrap_tx2 {
-    line-height:40px ;
+    line-height:25px ;
+    padding-bottom: 15px;
 }
 .wrap_tx2 {
     opacity: 0;
@@ -912,6 +914,18 @@ header .display img{
         opacity: 1;
         display: block;
     }
+    header >a{
+        right: 3%;
+    }
+    header #wrapper nav > ul ul>.wrap_tx2::after{
+        position: absolute; 
+        content:""; 
+        display: block; 
+        border-bottom: 1px solid #FFFFFF;
+        width: 1000%;
+        left: -341%;
+        bottom: 78%;
+    }
 
     /* section1 */
     .re_text {
@@ -1153,6 +1167,11 @@ header .display img{
         top: 25%;
     }
 }
+@media screen and (max-width: 532px){
+    #wrap_text{    
+        right: 0%;
+        }
+}
 @media screen and (max-width: 516px){
     .pat_img1{
         left: 4%;
@@ -1211,6 +1230,12 @@ header .display img{
     .display h1{
         font-size: 30px;
         left: 36%;
+    }
+    header #wrapper nav > ul ul>.wrap_tx2::after{
+        bottom: 84%;
+    }
+    #wrap_text {
+        right: 10%;
     }
 
     /* section1 */
