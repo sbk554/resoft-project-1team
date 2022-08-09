@@ -140,6 +140,7 @@ header #wrapper nav > ul >li {
 header #wrapper nav > ul ul li {
     line-height: 25px;
     padding-left: 0px;
+    width: 101px;
 }
 
 header #wrapper nav > ul ul a {
@@ -155,7 +156,7 @@ header #wrapper nav > ul ul {
     text-align: left;
     height: 230px;
     transition: all 0.5s;
-    padding-left: 40px;
+    padding-left: 26px;
 }
 header #wrapper nav > ul ul>.wrap_tx2 a{
     font-size: 20px;
