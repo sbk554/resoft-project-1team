@@ -1,3 +1,4 @@
+<!-- 정보 마당 페이지 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,33 +25,49 @@
         <ul class="nav_list">
           <li>
           <a href="../2page/2page.html" class="nav_pagelink">회사소개</a>
-            <ul class="nav_sublist">
-              <li><a href="../2page/2page.html/#resoft">REsoft소개</a></li>
-              <li><a href="../2page/2page.html/#yunhyuk">연혁</a></li>
-              <li><a href="../2page/2page.html/#section3">조직도</a></li>
-              <li><a href="../2page/2page.html/#section4">특허&인증</a></li>
-              <li><a href="../2page/2page.html/#section5">오시는 길</a></li>
-            </ul>
           </li>
           <li>
           <a href="../3page/3page.html" class="nav_pagelink">사업현황</a>
-            <ul class="nav_sublist">
-              <li><a href="../3page/3page.html/#section_ecoce">ECOCE</a></li>
-              <li><a href="../3page/3page.html/#moado">moaDo</a></li>
-              <li><a href="../3page/3page.html/#section_etc">ETC</a></li>
-            </ul>
           </li>
           <li>
-          <a href="#" class="nav_pagelink">정보마당</a>
-            <ul class="nav_sublist">
-              <li><a href="#resoft_news">REsoft소식</a></li>
-            </ul>
+          <a href="#" class="nav_pagelink active">정보마당</a>
           </li>
         </ul>
-        <a href="javascript:void(0);" onclick="openCloseMenu(this);" class="button-menu"><img src="../img/icon/ic_menu_bk.png" alt="Button menu"></a>
+        <button type="button" class="button-menu" onclick="openCloseMenu(this);"><img src="../img/icon/ic_menu_bk.png" alt="Menu Button"></button>
       </div>
     </div>
-    <div class="nav_submenu_background"></div>
+    <div class="nav_submenu_background">
+      <div class="submenu_title_wrap">
+        <ul class="submenu_title">
+          <li>회사소개</li>
+          <li>사업현황</li>
+          <li>정보마당</li>
+        </ul>
+      </div>
+      <ul class="submenu_sections">
+        <li>
+          <ul class="submenu_sections_item">
+            <li><a href="../2page/2page.html#resoft">REsoft소개</a></li>
+            <li><a href="../2page/2page.html#yunhyuk">연혁</a></li>
+            <li><a href="../2page/2page.html#section3">조직도</a></li>
+            <li><a href="../2page/2page.html#section4">특허&인증</a></li>
+            <li><a href="../2page/2page.html#section5">오시는 길</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="submenu_sections_item">
+            <li><a href="../3page/3page.html#section_ecoce">ECOCE</a></li>
+            <li><a href="../3page/3page.html#section_moado">moaDo</a></li>
+            <li><a href="../3page/3page.html#section_etc">ETC</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="submenu_sections_item">
+            <li><a href="#resoft_news">REsoft소식</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <header>
@@ -62,7 +79,7 @@
     </div>
   </header>
 
-  <main>
+  <main role="main">
     <section id="resoft_news">
       <!-- News page title -->
       <div class="title_wrap">
@@ -75,23 +92,25 @@
         <!-- News item 1 -->
         <div class="news_item">
           <div class="news_img_wrap">
-            <img src="../img/common/news@2x.png" alt="">
+            <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
-          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <p class="date_text">2022.01.01</p>
+          <div class="news_text_wrap">
+            <h3 class="news_title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, aliquam?</h3>
+            <p class="date_text">2022.01.01</p>
+          </div>
         </div>
         <!-- News item 2 -->
         <div class="news_item">
           <div class="news_img_wrap">
-            <img src="../img/common/news@2x.png" alt="">
+            <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
-          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, aliquam?</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 3 -->
         <div class="news_item">
           <div class="news_img_wrap">
-            <img src="../img/common/news@2x.png" alt="">
+            <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
@@ -99,7 +118,7 @@
         <!-- News item 4 -->
         <div class="news_item">
           <div class="news_img_wrap">
-            <img src="../img/common/news@2x.png" alt="">
+            <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
@@ -107,7 +126,7 @@
         <!-- News item 5 -->
         <div class="news_item">
           <div class="news_img_wrap">
-            <img src="../img/common/news@2x.png" alt="">
+            <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
@@ -115,7 +134,7 @@
         <!-- News item 6 -->
         <div class="news_item">
           <div class="news_img_wrap">
-            <img src="../img/common/news@2x.png" alt="">
+            <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
@@ -123,7 +142,7 @@
         <!-- News item 7 -->
         <div class="news_item">
           <div class="news_img_wrap">
-            <img src="../img/common/news@2x.png" alt="">
+            <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
@@ -131,7 +150,7 @@
         <!-- News item 8 -->
         <div class="news_item">
           <div class="news_img_wrap">
-            <img src="../img/common/news@2x.png" alt="">
+            <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
@@ -139,7 +158,7 @@
         <!-- News item 9 -->
         <div class="news_item">
           <div class="news_img_wrap">
-            <img src="../img/common/news@2x.png" alt="">
+            <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
@@ -147,7 +166,7 @@
         <!-- News item 10 -->
         <div class="news_item">
           <div class="news_img_wrap">
-            <img src="../img/common/news@2x.png" alt="">
+            <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
           <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p class="date_text">2022.01.01</p>
@@ -183,10 +202,9 @@
   <script>
     // Navigation
     let submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
-    let sublists = document.getElementsByClassName('nav_sublist');
+
     // 세부 메뉴 열기/닫기
     function openCloseMenu() {
-    // if(submenuBack.style.display !== 'block') {
     if(submenuBack.style.opacity == 0) {
         openMenu();
       } else {
@@ -196,29 +214,18 @@
     // 세부메뉴 열기
     function openMenu() {
       console.log("open menu")
-    // submenuBack.style.display = 'block';
-    submenuBack.style.opacity = 1;
-      
-      for (let list of sublists) {
-      // list.style.display = 'block';
-      list.style.opacity = 1;
-      }
+      submenuBack.style.visibility = 'visible';
+      submenuBack.style.opacity = 1;
     }
     // 세부메뉴 닫기
     function closeMenu() {
-    console.log("close menu test")
-    // submenuBack.style.display = 'none';
-    submenuBack.style.opacity = 0;
-    
-      for (let list of sublists) {
-      // list.style.display = 'none';
-      list.style.opacity = 0;
-      }
+      console.log("close menu")
+      submenuBack.style.visibility = 'hidden';
+      submenuBack.style.opacity = 0;
     }
 
     $(document).ready(function(){
-      $('.nav_sublist li').click(function(){
-        console.log("close menu test 2")
+      $('.nav_submenu_background li a').click(function(){
         closeMenu();
       });
 

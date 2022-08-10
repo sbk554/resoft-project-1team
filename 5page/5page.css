@@ -136,6 +136,17 @@
     margin: 0 auto;
 }
 
+.post-back-icon:hover a{
+    color: #184b9f;
+    transition:0.5s;
+}
+
+.post-back-icon:hover .post-back-icon-box {
+    border-color: #184b9f;
+    background-color: #184b9f;
+    transition:0.5s;
+}
+
 .post-prevnext{
     width:100%;
     display:flex;
@@ -164,6 +175,28 @@
 }
 .post-next-icon{
     margin-left: 20px;
+}
+
+.post-prev:hover a{
+    color: #184b9f;
+    transition:0.5s;
+}
+
+.post-prev:hover .post-prev-btn{
+    border: 1px solid #184b9f;
+    background-color: #184b9f;
+    transition:0.5s;
+}
+
+.post-next:hover a{
+    color: #184b9f;
+    transition:0.5s;
+}
+
+.post-next:hover .post-next-btn{
+    border: 1px solid #184b9f;
+    background-color: #184b9f;
+    transition:0.5s;
 }
 
 footer{

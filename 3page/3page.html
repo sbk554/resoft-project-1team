@@ -25,33 +25,64 @@
         <ul class="nav_list">
           <li>
             <a href="../2page/2page.html" class="nav_pagelink">회사소개</a>
-            <ul class="nav_sublist">
-              <li><a href="../2page/2page.html/#resoft">REsoft소개</a></li>
-              <li><a href="../2page/2page.html/#yunhyuk">연혁</a></li>
-              <li><a href="../2page/2page.html/#section3">조직도</a></li>
-              <li><a href="../2page/2page.html/#section4">특허&인증</a></li>
-              <li><a href="../2page/2page.html/#section5">오시는 길</a></li>
-            </ul>
+            <!-- <ul class="nav_sublist">
+              <li><a href="../2page/2page.html#resoft">REsoft소개</a></li>
+              <li><a href="../2page/2page.html#yunhyuk">연혁</a></li>
+              <li><a href="../2page/2page.html#section3">조직도</a></li>
+              <li><a href="../2page/2page.html#section4">특허&인증</a></li>
+              <li><a href="../2page/2page.html#section5">오시는 길</a></li>
+            </ul> -->
           </li>
           <li>
-            <a href="#" class="nav_pagelink">사업현황</a>
-            <ul class="nav_sublist">
+            <a href="#" class="nav_pagelink active">사업현황</a>
+            <!-- <ul class="nav_sublist">
               <li><a href="#section_ecoce">ECOCE</a></li>
               <li><a href="#section_moado">moaDo</a></li>
               <li><a href="#section_etc">ETC</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li>
             <a href="../4page/4page.html" class="nav_pagelink">정보마당</a>
-            <ul class="nav_sublist">
-              <li><a href="../4page/4page.html/#resoft_news">REsoft소식</a></li>
-            </ul>
           </li>
         </ul>
-        <a href="javascript:void(0);" onclick="openCloseMenu(this);" class="button-menu"><img src="../img/icon/ic_menu_bk.png" alt="Button menu"></a>
+        <button type="button" class="button-menu" onclick="openCloseMenu(this);"><img src="../img/icon/ic_menu_bk.png" alt="Menu Button"></button>
       </div>
     </div>
-    <div class="nav_submenu_background"></div>
+    <div class="nav_submenu_background">
+      <div class="submenu_title_wrap">
+        <ul class="submenu_title">
+          <!-- <li><a href="../2page/2page.html">회사소개</a></li>
+          <li><a href="#">사업현황</a></li>
+          <li><a href="../4page/4page.html">정보마당</a></li> -->
+          <li>회사소개</li>
+          <li>사업현황</li>
+          <li>정보마당</li>
+        </ul>
+      </div>
+      <ul class="submenu_sections">
+        <li>
+          <ul class="submenu_sections_item">
+            <li><a href="../2page/2page.html#resoft">REsoft소개</a></li>
+            <li><a href="../2page/2page.html#yunhyuk">연혁</a></li>
+            <li><a href="../2page/2page.html#section3">조직도</a></li>
+            <li><a href="../2page/2page.html#section4">특허&인증</a></li>
+            <li><a href="../2page/2page.html#section5">오시는 길</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="submenu_sections_item">
+            <li><a href="#section_ecoce">ECOCE</a></li>
+            <li><a href="#section_moado">moaDo</a></li>
+            <li><a href="#section_etc">ETC</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="submenu_sections_item">
+            <li><a href="../4page/4page.html#resoft_news">REsoft소식</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <header>
@@ -62,7 +93,6 @@
       </div>
     </div>
   </header>
-
 
   <main role="main">
     <!-- First project ecoce section -->
@@ -127,10 +157,10 @@
         <p class="sub_title_text">PROJECTS</p>
         <div class="etc_content_wrap">
           <img src="../img/3page/proj_daegumaskwalk.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
-          <img src="../img/3page/proj_kua.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
-          <img src="../img/3page/proj_hansung.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
-          <img src="../img/3page/proj_knulab.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
-          <img src="../img/3page/proj_kibwa.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
+          <img src="../img/3page/proj_kua.png" alt="대한비뇨의학회">
+          <img src="../img/3page/proj_hansung.png" alt="제8회 한성백제마라톤 비대면 대회">
+          <img src="../img/3page/proj_knulab.png" alt="경북대학교 금속공학과 응고가공학 연구실">
+          <img src="../img/3page/proj_kibwa.png" alt="IT여성기업인협회 영남지회">
         </div>
       </div>
     </section>
@@ -158,10 +188,9 @@
   <script>
   // Navigation
   let submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
-  let sublists = document.getElementsByClassName('nav_sublist');
+  // let sublists = document.getElementsByClassName('nav_sublist');
   // 세부 메뉴 열기/닫기
   function openCloseMenu() {
-    // if(submenuBack.style.display !== 'block') {
     if(submenuBack.style.opacity == 0) {
       openMenu();
     } else {
@@ -171,29 +200,28 @@
   // 세부메뉴 열기
   function openMenu() {
     console.log("open menu")
-    // submenuBack.style.display = 'block';
+    submenuBack.style.visibility = 'visible';
     submenuBack.style.opacity = 1;
     
-    for (let list of sublists) {
-      // list.style.display = 'block';
-      list.style.opacity = 1;
-    }
+    // for (let list of sublists) {
+    //   list.style.visibility = 'visible';
+    //   list.style.opacity = 1;
+    // }
   }
   // 세부메뉴 닫기
   function closeMenu() {
-    console.log("close menu test")
-    // submenuBack.style.display = 'none';
+    console.log("close menu")
+    submenuBack.style.visibility = 'hidden';
     submenuBack.style.opacity = 0;
     
-    for (let list of sublists) {
-      // list.style.display = 'none';
-      list.style.opacity = 0;
-    }
+    // for (let list of sublists) {
+    //   list.style.visibility = 'hidden';
+    //   list.style.opacity = 0;
+    // }
   }
 
   $(document).ready(function(){
-    $('.nav_sublist li').click(function(){
-      console.log("close menu test 2")
+    $('.nav_submenu_background li a').click(function(){
       closeMenu();
     });
 
