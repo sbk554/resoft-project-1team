@@ -421,6 +421,8 @@ header .img_wrap {
     color: #1E1E1E;
     font-size: 18px;
     padding-top: 10px;
+    letter-spacing: 0.9px;
+    font:bold 18px/26px Noto Sans KR;
 }
 
 .news_tag_img a:hover h2{
