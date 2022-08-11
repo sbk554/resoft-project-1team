@@ -1068,6 +1068,9 @@ header .img_wrap {
     .img_wrap img{
         right: 75%;
     }
+    .img_wrap1 img {
+        right: 75%;
+    }
     .header .bannerText{
         left: 140px;
     }
@@ -1315,6 +1318,10 @@ header .img_wrap {
         display: block;
     }
     .img_wrap img {
+        left: 5%;
+        margin: 0;
+    }
+    .img_wrap1 img {
         left: 5%;
         margin: 0;
     }
@@ -1566,6 +1573,11 @@ header .img_wrap {
 @media screen and (max-width: 430px){
     /* header */
     .img_wrap img{
+        width: 100px;
+        height: 25px;
+        right: -17px;
+    }
+    .img_wrap1 img {
         width: 100px;
         height: 25px;
         right: -17px;
