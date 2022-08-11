@@ -329,7 +329,11 @@ header .display img{
 
 }
 .info >p{   
+    font-size: 20px;
     padding: 20px 0 55px 0;
+}
+.info1 >p{   
+    font-size: 20px;
 }
 .title {
     color: #184B9F;
@@ -436,7 +440,6 @@ header .display img{
 .rectangle {
     position: relative;
     padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   }
 
 .zo_tx {
@@ -555,8 +558,9 @@ header .display img{
 }
 .pat_img1 img{
     max-width: initial;
-    margin-left: -3%;
+    margin-left: 0%;
     margin-top: -9px;
+    width: 220px;
 }
 .pat_img2{
     max-width: 220px;
@@ -583,8 +587,9 @@ header .display img{
 }
 .pat_img3 img{
     max-width: initial;
-    margin-left: -3%;
-     margin-top: -9px;
+    margin-left: 0%;
+    margin-top: -9px;
+    width: 220px;
 }
 .pat_img4{
     max-width: 220px;
@@ -597,8 +602,9 @@ header .display img{
 }
 .pat_img4 img{
     max-width: initial;
-    margin-left: -3%;
-     margin-top: -9px;
+    margin-left: 0%;
+    margin-top: -9px;
+    width: 220px;
 }
 .pat_img5{
     max-width: 220px;
@@ -611,8 +617,9 @@ header .display img{
 }
 .pat_img5 img{
     max-width: initial;
-    margin-left: -3%;
-     margin-top: -9px;
+    margin-left: 0%;
+    margin-top: -9px;
+    width: 220px;
 }
 .pat_img6{
     max-width: 220px;
@@ -625,8 +632,9 @@ header .display img{
 }
 .pat_img6 img{
     max-width: initial;
-    margin-left: -3%;
-     margin-top: -9px;
+    margin-left: 0%;
+    margin-top: -9px;
+    width: 220px;
 }
 .pat_img7{
     max-width: 220px;
@@ -639,8 +647,9 @@ header .display img{
 }
 .pat_img7 img{
     max-width: initial;
-    margin-left: -3%;
-     margin-top: -9px;
+    margin-left: 0%;
+    margin-top: -9px;
+    width: 220px;
 }
 .pat_img8{
     max-width: 220px;
@@ -653,8 +662,9 @@ header .display img{
 }
 .pat_img8 img{
     max-width: initial;
-    margin-left: -3%;
-     margin-top: -9px;
+    margin-left: 0%;
+    margin-top: -9px;
+    width: 220px;
 }
 .pat_img9{
     max-width: 220px;
@@ -667,8 +677,9 @@ header .display img{
 }
 .pat_img9 img{
     max-width: initial;
-    margin-left: -3%;
-     margin-top: -9px;
+    margin-left: 0%;
+    margin-top: -9px;
+    width: 220px;
 }
 
 /* section5 */

@@ -93,6 +93,11 @@ body {
 .btn{
     cursor: pointer;
 }
+.btn_3{
+    opacity: 0;
+    right: 15%;
+    position: absolute;
+}
 
 header #wrapper nav > ul > li > a {
     display: block;
@@ -173,6 +178,22 @@ header #wrapper nav > ul ul> .wrap_tx2 {
     width: 133px;
     height: 30px;
     
+}
+.img_wrap1 img{
+    position: fixed;
+    width: 133px;
+    height: 30px;
+    
+    
+}
+header .img_wrap1 {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    z-index: 100;
+    margin-left: 17.5%;
+    height: 30px;
+    opacity: 0;
 }
 
 header >a {
@@ -403,7 +424,7 @@ header .img_wrap {
 }
 
 .news_tag_img a:hover h2{
-    color: blue;
+    color: #184B9F;
 }
 
 .news_tag_img a h3{
@@ -500,7 +521,7 @@ header .img_wrap {
 
 .moa_text:hover img{
     filter: brightness(40%);
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 
 .moa img:hover img{
@@ -520,6 +541,7 @@ header .img_wrap {
     top: 500px;
     left: 270px;
     z-index: 1;
+    cursor: pointer;
 }
 
 
@@ -545,6 +567,7 @@ header .img_wrap {
     visibility:hidden;
     left: 270px;
     top: 970px;
+    cursor: pointer;
 }
 
 .text_2 h3{
