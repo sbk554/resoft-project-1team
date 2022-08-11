@@ -764,6 +764,9 @@ header .display img{
     left: 460px;
 
 }
+.fot_text1 h1{
+    font-weight: 300;
+}
 
 .fot_text2 h1{
     color: #9E9E9E;
@@ -772,6 +775,7 @@ header .display img{
     text-align: left;
     top: 125px;
     left: 240px;
+    font-weight: 300;
 }
 .fot_text2 h2{
     color: #9E9E9E;
@@ -780,6 +784,7 @@ header .display img{
     text-align: left;
     top: 125px;
     left: 1000px;
+    font-weight: 300;
 }
 
 @media screen and (max-width: 1280px){
@@ -1053,19 +1058,20 @@ header .display img{
         height: 331px;
     }
     .fot_img {
-        top: 20%;
-        left: 10%;
+        top: 15%;
+        left: 5%;
     }
     .fot_text1 {
-        left: 300px;
+        left: 260px;
+        top: 20%;
     }
     .fot_text2 h1 {
-        top: 45%;
-        left: 10%;
+        top: 38%;
+        left: 5%;
     }
     .fot_text2 h2 {
         top: 75%;
-        left: 10%;
+        left: 5%;
     }
 }
 @media screen and (max-width: 685px){
@@ -1387,6 +1393,10 @@ header .display img{
         max-width: 150px;
         max-height: 220px;
         left: 5%;
+
+    }
+    .pat_img1 img{
+        width: 152px;
     }
     .pat_img2{
         max-width: 150px;
@@ -1403,10 +1413,16 @@ header .display img{
         top: 29%;
         left: 5%;
     }
+    .pat_img3 img{
+        width: 152px;
+    }
     .pat_img4{
         max-width: 150px;
         max-height: 220px;
         top: 29%
+    }
+    .pat_img4 img{
+        width: 152px;
     }
     .pat_img5{
         max-width: 150px;
@@ -1414,10 +1430,16 @@ header .display img{
         top: 59%;
         left: 5%;
     }
+    .pat_img5 img{
+        width: 152px;
+    }
     .pat_img6{
         max-width: 150px;
         max-height: 220px;
         top: 59%;
+    }
+    .pat_img6 img{
+        width: 152px;
     }
     .pat_img7{
         max-width: 150px;
@@ -1425,16 +1447,25 @@ header .display img{
         top: 90%;
         left: 5%;
     }
+    .pat_img7 img{
+        width: 152px;
+    }
     .pat_img8{
         max-width: 150px;
         max-height: 220px;
         top: 90%;
+    }
+    .pat_img8 img{
+        width: 152px;
     }
     .pat_img9{
         max-width: 150px;
         max-height: 220px;
         top: 119%;
         left: 5%;
+    }
+    .pat_img9 img{
+        width: 152px;
     }
 
 
@@ -1469,21 +1500,25 @@ header .display img{
     /* footer */
     .fot_img {
         top: 9%;
-        left: 8%;
+        left: 5%;
+    }
+    .fot_img img{
+        width: 150px;
     }
     .fot_text1 {
-        left: 7%;
+        left: 5%;
+        top: 25%;
         font-size: 11px;
     }
     .fot_text2 h1 {
         top: 41%;
-        left: 7%;
+        left: 5%;
         font-size: 11px;
 
     }
     .fot_text2 h2 {
         top: 70%;
-        left: 7%;
+        left: 5%;
         font-size: 11px;
     }
 }
