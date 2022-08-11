@@ -398,6 +398,7 @@
         const $btn = $('.btn');
         const $start = $('.start');
         const $stop = $('.stop');
+        const wrap = $('header #wrapper nav > ul > li > a');
         // NAV 슬라이드
         $display.slick({
         autoplay: true,
@@ -434,16 +435,18 @@
             scroll_pos = $(this).scrollTop();
             if(scroll_pos > 0) {
                 $('.navi').css('background-color', '#ffffff');
+                $('#wrapper').css('border-bottom', '1px solid #000');
                 $('.img_wrap').css('opacity','0');
                 $('.img_wrap1').css('opacity','1');
-                $('header #wrapper nav > ul > li > a').css('color','#000');
+                wrap.css('color','#000');
                 $('.btn_2').css('opacity','0');
                 $('.btn_3').css('opacity','1');
             } else {   
                 $('.navi').css('background-color', 'transparent');
+                $('#wrapper').css('border-bottom', '1px solid #ffffff');
                 $('.img_wrap').css('opacity','1');
                 $('.img_wrap1').css('opacity','0');
-                $('header #wrapper nav > ul > li > a').css('color','#ffffff');
+                wrap.css('color','#ffffff');
                 $('.btn_2').css('opacity','1');
                 $('.btn_3').css('opacity','0');
             }
