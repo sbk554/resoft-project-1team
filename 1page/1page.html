@@ -444,6 +444,11 @@
                 $('.img_wrap').css('opacity','0');
                 $('.img_wrap1').css('opacity','1');
                 wrap.css('color','#000');
+                wrap.hover(function(){
+                    $(this).css('color','#184B9F');
+                    },function(){
+                        $(this).css('color','#000');
+                    });
                 $('.btn_2').css('opacity','0');
                 $('.btn_3').css('opacity','1');
             } else {   
@@ -452,12 +457,18 @@
                 $('.img_wrap').css('opacity','1');
                 $('.img_wrap1').css('opacity','0');
                 wrap.css('color','#ffffff');
+                wrap.hover(function(){
+                    $(this).css('color','#184B9F');
+                    },function(){
+                        $(this).css('color','#ffffff');
+                    });
                 $('.btn_2').css('opacity','1');
                 $('.btn_3').css('opacity','0');
             }
 
         });
     });
+    
     </script>
 
 </body>
