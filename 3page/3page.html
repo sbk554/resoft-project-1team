@@ -20,11 +20,12 @@
   <nav class="nav">
     <div class="nav_wrap">
       <!-- REsoft logo -->
-      <a href="../1page/1page.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="Button logo" class="logo_resoft"></a>
+      <a href="../index.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="Button logo" class="logo_resoft"></a>
       <div>
         <ul class="nav_list">
           <li>
             <a href="../2page/2page.html" class="nav_pagelink">회사소개</a>
+            <div class="pagelink_underline"></div>
             <!-- <ul class="nav_sublist">
               <li><a href="../2page/2page.html#resoft">REsoft소개</a></li>
               <li><a href="../2page/2page.html#yunhyuk">연혁</a></li>
@@ -35,6 +36,7 @@
           </li>
           <li>
             <a href="#" class="nav_pagelink active">사업현황</a>
+            <div class="pagelink_underline"></div>
             <!-- <ul class="nav_sublist">
               <li><a href="#section_ecoce">ECOCE</a></li>
               <li><a href="#section_moado">moaDo</a></li>
@@ -43,6 +45,7 @@
           </li>
           <li>
             <a href="../4page/4page.html" class="nav_pagelink">정보마당</a>
+            <div class="pagelink_underline"></div>
           </li>
         </ul>
         <button type="button" class="button-menu" onclick="openCloseMenu(this);"><img src="../img/icon/ic_menu_bk.png" alt="Menu Button"></button>
@@ -51,12 +54,9 @@
     <div class="nav_submenu_background">
       <div class="submenu_title_wrap">
         <ul class="submenu_title">
-          <!-- <li><a href="../2page/2page.html">회사소개</a></li>
+          <li><a href="../2page/2page.html">회사소개</a></li>
           <li><a href="#">사업현황</a></li>
-          <li><a href="../4page/4page.html">정보마당</a></li> -->
-          <li>회사소개</li>
-          <li>사업현황</li>
-          <li>정보마당</li>
+          <li><a href="../4page/4page.html">정보마당</a></li>
         </ul>
       </div>
       <ul class="submenu_sections">
@@ -187,7 +187,7 @@
   
   <script>
   // Navigation
-  let submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
+  const submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
   // let sublists = document.getElementsByClassName('nav_sublist');
   // 세부 메뉴 열기/닫기
   function openCloseMenu() {
@@ -221,9 +221,7 @@
   }
 
   $(document).ready(function(){
-    $('.nav_submenu_background li a').click(function(){
-      closeMenu();
-    });
+    $('.nav_submenu_background li a').click(closeMenu);
 
     // 메뉴 마우스 오버시 상세메뉴 열기
     // $('.nav_pagelink').hover(function(){

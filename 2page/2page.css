@@ -4,7 +4,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, 
@@ -278,7 +281,7 @@ header .display img{
 /* section2 */
 #yunhyuk{
     width: 100%;
-    height: 1314px;
+    height: 1400px;
     position: relative;
     background-color: #F9F9F9;
 }
@@ -286,7 +289,7 @@ header .display img{
 .yh_text{
     position: absolute;
     left: 13%;
-    top: 10%;
+    top: 8%;
 }
 .yh_text h1{
     font-size: 40px;
@@ -306,8 +309,8 @@ header .display img{
     position: absolute;
     margin: 20px auto;
     padding: 20px;
-    top: 20%;
-    left: 50%;
+    top: 16%;
+    left: 46%;
     width: 25%;
 }
 .outer {
@@ -323,7 +326,7 @@ header .display img{
     position: relative;
     border-top: 1px solid #C8C8C8;
     padding-top: 40px;
-    width: 230%;
+    width: 279%;
     padding-left: 90%;
     left: -90%;
 
@@ -331,9 +334,11 @@ header .display img{
 .info >p{   
     font-size: 20px;
     padding: 20px 0 55px 0;
+    font-weight: 400; 
 }
 .info1 >p{   
     font-size: 20px;
+    font-weight: 400; 
 }
 .title {
     color: #184B9F;
@@ -364,7 +369,7 @@ header .display img{
     position: absolute;
     font-size: 50px;
     color: #000000;
-    left: -70.5%;
+    left: -51.5%;
     top: -5%;
 }
 .card1 {
@@ -405,7 +410,9 @@ header .display img{
     top: 10%;
     cursor: pointer;
 }
-
+.zo_text:hover{
+    color: #184B9F;
+}
 .zo_text h1{
     font-size: 40px;
 }
@@ -817,15 +824,20 @@ header .display img{
     }
     .jul{
         left: -188%;
-        width: 390%;
+        width: 540%;
         padding-left: 188%;
     }
-
+    .timeline{
+        top: 15%;
+        left: 39%;
+        width: 20%;
+        min-width: 175px;
+    }
     .title2{
-        left: -209%;
+        left: -214%;
     }
     .title3{
-        left: -99.5%;
+        left: -56.5%;
     }
 
     /* section3 */
@@ -909,7 +921,16 @@ header .display img{
         left: 58%;
     }
 }
-
+@media screen and (max-width: 994px){
+    #yunhyuk{
+        height: 1550px;
+    }
+}
+@media screen and (max-width: 790px){
+    .timeline{   
+    left: 33%;
+    }
+}
 @media screen and (max-width: 768px){
     /* header */
     header #wrapper nav > ul ul {
@@ -965,7 +986,7 @@ header .display img{
 
     /* section2 */
     #yunhyuk{
-        height:1494px ;
+        height: 1650px;
     }
     .yh_text{
         left: 4%;
@@ -981,6 +1002,11 @@ header .display img{
     .title3 {
         left: -139.5%;
     }
+    .timeline{
+        width: 25%;
+        left: 49%;
+        top: 14%;
+    }
 
     /* section3 */
     .zo_text {
@@ -993,7 +1019,6 @@ header .display img{
     .zo_tx2 li{
         margin: 0px auto 25px 0;
     }
-    
     
     /* section4 */
     #section4{

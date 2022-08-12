@@ -20,17 +20,20 @@
   <nav class="nav">
     <div class="nav_wrap">
       <!-- REsoft logo -->
-      <a href="../1page/1page.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="Button logo" class="logo_resoft"></a>
+      <a href="../index.html" class="button-home"><img src="../img/common/logo_resoft.png" alt="Button logo" class="logo_resoft"></a>
       <div>
         <ul class="nav_list">
           <li>
           <a href="../2page/2page.html" class="nav_pagelink">회사소개</a>
+          <div class="pagelink_underline"></div>
           </li>
           <li>
           <a href="../3page/3page.html" class="nav_pagelink">사업현황</a>
+          <div class="pagelink_underline"></div>
           </li>
           <li>
           <a href="#" class="nav_pagelink active">정보마당</a>
+          <div class="pagelink_underline"></div>
           </li>
         </ul>
         <button type="button" class="button-menu" onclick="openCloseMenu(this);"><img src="../img/icon/ic_menu_bk.png" alt="Menu Button"></button>
@@ -39,9 +42,9 @@
     <div class="nav_submenu_background">
       <div class="submenu_title_wrap">
         <ul class="submenu_title">
-          <li>회사소개</li>
-          <li>사업현황</li>
-          <li>정보마당</li>
+          <li><a href="../2page/2page.html">회사소개</a></li>
+          <li><a href="../3page/3page.html">사업현황</a></li>
+          <li><a href="#">정보마당</a></li>
         </ul>
       </div>
       <ul class="submenu_sections">
@@ -63,7 +66,7 @@
         </li>
         <li>
           <ul class="submenu_sections_item">
-            <li><a href="#resoft_news">REsoft소식</a></li>
+            <li><a href="#resoft_news">REsoft 소식</a></li>
           </ul>
         </li>
       </ul>
@@ -112,7 +115,7 @@
           <div class="news_img_wrap">
             <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
-          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, aliquam?</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 4 -->
@@ -120,7 +123,7 @@
           <div class="news_img_wrap">
             <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
-          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, aliquam?</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 5 -->
@@ -128,7 +131,7 @@
           <div class="news_img_wrap">
             <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
-          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, aliquam?</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 6 -->
@@ -136,7 +139,7 @@
           <div class="news_img_wrap">
             <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
-          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, aliquam?</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 7 -->
@@ -144,7 +147,7 @@
           <div class="news_img_wrap">
             <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
-          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, aliquam?</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 8 -->
@@ -152,7 +155,7 @@
           <div class="news_img_wrap">
             <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
-          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, aliquam?</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 9 -->
@@ -160,7 +163,7 @@
           <div class="news_img_wrap">
             <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
-          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, aliquam?</h3>
           <p class="date_text">2022.01.01</p>
         </div>
         <!-- News item 10 -->
@@ -168,17 +171,15 @@
           <div class="news_img_wrap">
             <img src="../img/common/news_large.png" alt="Using a cell phone">
           </div>
-          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <h3 class="news_title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, aliquam?</h3>
           <p class="date_text">2022.01.01</p>
         </div>
       </div>
 
       <!-- News page button Add -->
       <button class="news_button_more">더보기</button>
-
     </section>
   </main>
-
 
   <!-- footer -->
   <footer>
@@ -201,11 +202,11 @@
 
   <script>
     // Navigation
-    let submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
+    const submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
 
     // 세부 메뉴 열기/닫기
     function openCloseMenu() {
-    if(submenuBack.style.opacity == 0) {
+      if(submenuBack.style.opacity == 0) {
         openMenu();
       } else {
         closeMenu();
@@ -224,10 +225,20 @@
       submenuBack.style.opacity = 0;
     }
 
+    // News items - 본문의 news 컨텐츠 클릭시 상세페이지로 이동
+    // let newsContents = document.getElementsByClassName('news_item');
+    // for (let content of newsContents) {
+    //   content.oncl
+    // }
+    // const newsContents = document.getElementsByClassName('news_item');
+    // for (const content of newsContents) {
+    //   content.setAttribute('href', '../5page/5page.html');
+    //     // location.href = '../5page/5page.html';
+    // }
+
+
     $(document).ready(function(){
-      $('.nav_submenu_background li a').click(function(){
-        closeMenu();
-      });
+      $('.nav_submenu_background li a').click(closeMenu);
 
       // More button
       let firstNum = 6
@@ -240,7 +251,7 @@
         }
       });
 
-      // News items
+      // News items - 본문의 news 컨텐츠 클릭시 상세페이지로 이동하도록 함
       $('.news_item').click(function(){
         $(location).attr("href", "../5page/5page.html")  
       });
