@@ -1,148 +1,217 @@
+
 /* Navigation */
-/* 상단 고정 */
 .nav {
-    border: 1px solid #DBDBDB;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    padding-right: 50px;
-    background-color: white;
-  }
+  border: 1px solid #DBDBDB;
+  position: sticky; /* 상단 고정 */
+  top: 0;
+  z-index: 1;
+  padding-right: 50px;
+  background-color: white;
+}
+.nav_wrap,
+.nav_list,
+.button-menu {
+  display: flex;
+  align-items: center;
+}
+.nav_wrap {
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 80px;
+}
+.nav_wrap .logo_resoft{
+  margin-left: 120px;
+  width: 133px;
+}
+.nav_wrap>div {
+  display: flex;
+  height: 100%;
+}
+/* 네비게이션 아이템, 세부메뉴 아이템 공통 속성 */
+.nav_list li {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+}
+/* 네비게이션 아이템에만 적용하는 속성
+  (해당 아이템에만 적용하기 위해 .nav_list>li 사용) */
+.nav_list>li:not(:last-child) {
+  padding-right: 60px;
+}
+.nav_list>li:last-child {
+  padding-right: 108px;
+}
+/* Navigation - Underline */
+.pagelink_underline {
+  width: 0;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #184B9F;
+  opacity: 0;
+  transition-property: width opacity;
+  transition-duration: .5s;
+  transition-timing-function: ease-out;
+}
+/* 메뉴에 마우스오버하거나 선택된 메뉴일때(.active) 색을 바꿈 */
+.nav_pagelink:hover,
+.nav_pagelink.active {
+  color: #184B9F;
+}
+/* 메뉴에 마우스오버하거나 선택된 메뉴일때(.active)
+   underline의 너비와 투명도를 100%로 설정 */
+.nav_pagelink:hover ~ .pagelink_underline,
+.nav_pagelink.active ~ .pagelink_underline {
+  width: 100%;
+  opacity: 100%;
+}
+/* Navigation - Button menu */
+.button-menu {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button-menu>img {
+  width: 32px;
+  height: 32px;
+}
+/* Navigation - Submenu */
+.nav_submenu_background {
+  position: absolute;
+  width: 100%;
+  height: 263px;
+  background-color: rgba(24, 75, 159, .7);
+  opacity: 0;
+  visibility: hidden;
+  transition-property: visibility opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  color: white;
+  font-size: 20px;
+  line-height: 29px;
+}
+.nav_submenu_background li a {
+  color: white;
+}
+.nav_submenu_background li a:hover {
+  color: #538ae4;
+}
+.submenu_title_wrap {
+  height: 50px;
+  padding-right: 50px;
+  border-bottom: 1px solid white;
+  display: none;
+  /* border: 1px solid black; */
+}
+.submenu_title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  font-weight: 500;
+}
+.submenu_sections {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1440px;
+  margin: 10px auto 0;
+  padding-right: 50px;
+}
+.submenu_title li,
+.submenu_sections li {
+  width: 100%;
+  max-width: 134px;
+  text-align: left;
+}
+.submenu_title > li:last-child,
+.submenu_sections > li:last-child {
+  margin-right: 80px;
+}
+.submenu_sections_item li {
+  height: 32px;
+}
+
+@media screen and (max-width: 1280px) {
   .nav_wrap,
-  .nav_list,
-  .button-menu {
-    display: flex;
-    align-items: center;
-  }
-  .nav_wrap {
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1440px;
-    height: 80px;
-  }
-  .nav_wrap .logo_resoft{
-    margin-left: 120px;
-    width: 133px;
-  }
-  .nav_wrap div {
-    display: flex;
-    height: 100%;
-  }
-  /* 네비게이션 아이템, 세부메뉴 아이템 공통 속성 */
-  .nav_list li {
-    position: relative;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-  }
-  /* 네비게이션 아이템에만 적용하는 속성
-    (해당 아이템에만 적용하기 위해 .nav_list>li 사용) */
-  .nav_list>li:not(:last-child) {
-    padding-right: 60px;
-  }
-  .nav_list>li:last-child {
-    padding-right: 108px;
-  }
-  .nav_list>li>a:hover {
-    color: #184B9F;
-    border-bottom: 6px solid #184B9F;
-  }
-  .nav_list>li>a.active {
-    color: #184B9F;
-    border-bottom: 6px solid #184B9F;
-  }
-  /* Navigation - Button menu */
-  .button-menu {
-    border: none;
-    padding: 0;
-    background-color: transparent;
-  }
-  .button-menu>img {
-    width: 32px;
-    height: 32px;
-  }
-  /* Navigation - Sub menu */
-  /* .nav_sublist{
-    position: absolute;
-    top: 80px;
-    left: 0px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-    transition-property: visibility opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease
-  }
-  .nav_sublist li a {
-    color: white;
-  }
-  .nav_sublist li a:hover {
-    color: #184B9F;
-  } */
-  /* Navigation - New Submenu */
-  .nav_submenu_background {
-    position: absolute;
-    width: 100%;
-    height: 263px;
-    background-color: rgba(24, 75, 159, .7);
-    opacity: 0;
-    visibility: hidden;
-    transition-property: visibility opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    color: white;
-    font-size: 20px;
-    line-height: 29px;
-  }
-  .nav_submenu_background li a {
-    color: white;
-  }
-  .nav_submenu_background li a:hover {
-    color: #538ae4;
-  }
-  .submenu_title_wrap {
-    height: 50px;
-    padding-right: 50px;
-    border-bottom: 1px solid white;
-    display: none;
-    /* border: 1px solid black; */
-  }
-  .submenu_title {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    max-width: 1440px;
-    height: 100%;
-    margin: 0 auto;
-    font-weight: 500;
-    /* border: 1px solid green; */
-  }
+  .submenu_title,
   .submenu_sections {
-    display: flex;
-    justify-content: flex-end;
-    max-width: 1440px;
-    margin: 10px auto 0;
-    padding-right: 50px;
+    max-width: 1000px;
   }
-  .submenu_title li,
-  .submenu_sections li {
-    width: 100%;
-    max-width: 134px;
-    text-align: left;
-    /* border: 1px solid black; */
+  .nav_wrap .logo_resoft {
+    margin-left: 90px;
+  }
+  .nav_wrap .nav_list>li:last-child {
+    padding-right: 60px;
   }
   .submenu_title > li:last-child,
   .submenu_sections > li:last-child {
-    margin-right: 80px;
+    margin-right: 32px;
   }
-  .submenu_sections_item li {
-    height: 32px;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* navigation */
+
+  .nav,
+
+  .submenu_title_wrap,
+
+  .submenu_sections {
+
+    padding-right: 30px;
+
   }
 
+  /* Navigation - Submenu */
+
+  .submenu_title_wrap {
+
+    display: block;
+
+  }
+
+  /* 중앙정렬 */
+
+  .submenu_title_wrap,
+  .submenu_sections {
+    padding-right: 0;
+  }
+
+  .submenu_title,
+  .submenu_sections {
+    justify-content: center;
+  }
+
+  .submenu_title li,
+  .submenu_sections li{
+    text-align: left;
+  }
+
+  .submenu_title li:last-child,
+  .submenu_sections li:last-child {
+    margin-right: 0;
+  }
+
+  .nav_wrap,
+  .submenu_title,
+  .submenu_sections {
+    max-width: 768px;
+  }
+  .nav_wrap .logo_resoft {
+    margin-left: 32px;
+  }
+  .nav_wrap .nav_list {
+    display: none;
+  }
+  .nav_wrap .button-menu {
+    margin-left: 0;
+  }
+}
   
 /* post section */
 
