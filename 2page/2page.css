@@ -78,6 +78,19 @@ body {
 #wrap_text a:hover{
     color: #184B9F;
 }
+#wrapper>nav>#wrap_text>.wrap_tx1>.wrap_tx{
+    color: #184B9F;
+}
+.wrap_tx1::after {
+    position: absolute; 
+    content:""; 
+    display: block; 
+    border-bottom: 6px solid #184B9F;
+    border-radius: 50px; 
+    bottom: 15%;
+    left: 22%; 
+    width: 57%;
+}
 .wrap_tx::after {
     position: absolute; 
     content:""; 
