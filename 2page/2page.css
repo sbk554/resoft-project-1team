@@ -969,7 +969,7 @@ header .display img{
         right: 3%;
     }
     .wrap_tx1::after{
-        width: 0;
+        width:0;
     }
     header #wrapper nav > ul ul>.wrap_tx2::after{
         position: absolute; 
