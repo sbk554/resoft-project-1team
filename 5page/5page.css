@@ -227,7 +227,7 @@
 .top_container{
     background-image: url(../img/common/header_news.png);
     width:100%;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     height: 300px;
 }
 
