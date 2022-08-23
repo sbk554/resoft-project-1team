@@ -213,6 +213,7 @@ header .img_wrap {
 }
 .display{
     top: 80px;
+    background-size: 100%100%;
     background-image: url(../img/common/header_company.png);
     filter: opacity(0.8) drop-shadow(0 0 0 rgb(0, 0, 0));
     position: relative;
@@ -518,7 +519,7 @@ header .img_wrap {
     content: "";
     position: absolute;
     bottom: 72%;
-    left: 45.2%;
+    left: 46.2%;
     transform: translateX(-50%);
     width: 2px;
     height: 70px;
@@ -815,7 +816,11 @@ header .img_wrap {
     left: 1000px;
     font-weight: 300;
 }
-
+@media screen and (max-width: 1920px){
+    .display{
+        background-size: auto;
+    }
+}
 @media screen and (max-width: 1280px){
     /* header */
     #wrapper{
