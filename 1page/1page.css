@@ -673,8 +673,8 @@ header .img_wrap {
     opacity: 0;
 }
 .ser_img1:hover .ser_tx1{
-    top: 130px;
-    left: 80px;
+    top: 139px;
+    left: 68px;
     opacity: 1;
 }
 
@@ -686,8 +686,8 @@ header .img_wrap {
     opacity: 0;
 }
 .ser_img2:hover .ser_tx2{
-    top: 130px;
-    left: 80px;
+    top: 135px;
+    left: 62px;
     opacity: 1;
 }
 
@@ -699,8 +699,8 @@ header .img_wrap {
     opacity: 0;
 }
 .ser_img3:hover .ser_tx3{
-    top: 130px;
-    left: 80px;
+    top: 140px;
+    left: 66px;
     opacity: 1;
 }
 
@@ -712,8 +712,8 @@ header .img_wrap {
     opacity: 0;
 }
 .ser_img4:hover .ser_tx4{
-    top: 130px;
-    left: 80px;
+    top: 150px;
+    left: 61px;
     opacity: 1;
 }
 
@@ -736,20 +736,26 @@ header .img_wrap {
 }
 
 .ser_text1 h1{
-    left: 75px;
+    left: 60px;
     top:150px;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 300;
 }
 .ser_text1 h2{
-    font-size: 15px;
-    left: 106px;
+    font-size: 22px;
+    left: 82px;
     top: 200px;
+    font-weight:200;
 }
 .ser_text1{
     opacity: 1;
     transition: 0.5s;
 }
-
+.ser_tx1 h1{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 0.8;
+}
 
 .ser_img2{
     cursor: pointer;
@@ -768,18 +774,25 @@ header .img_wrap {
     position: absolute;
 }
 .ser_text2 h1{
-    left: 60px;
+    left: 46px;
     top:150px;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 300;
 }
 .ser_text2 h2{
-    font-size: 15px;
-    left: 91px;
+    font-size: 22px;
+    left:  68px;
     top: 200px;
+    font-weight:200;
 }
 .ser_text2{
     opacity: 1;
     transition: 0.5s;
+}
+.ser_tx2 h1{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 0.8;
 }
 
 .ser_img3{
@@ -799,18 +812,25 @@ header .img_wrap {
     position: absolute;
 }
 .ser_text3 h1{
-    left: 47px;
+    left:36px;
     top:150px;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight:300;
 }
 .ser_text3 h2{
-    font-size: 15px;
-    left: 107px;
+    font-size: 22px;
+    left: 101px;
     top: 200px;
+    font-weight:200;
 }
 .ser_text3{
     opacity: 1;
     transition: 0.5s;
+}
+.ser_tx3 h1{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 0.8;
 }
 
 .ser_img4{
@@ -830,18 +850,25 @@ header .img_wrap {
     position: absolute;
 }
 .ser_text4 h1{
-    left: 60px;
+    left: 45px;
     top:150px;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 300;
 }
 .ser_text4 h2{
-    font-size: 15px;
-    left: 116px;
+    font-size: 22px;
+    left:101px;
     top: 200px;
+    font-weight: 200;
 }
 .ser_text4{
     opacity: 1;
     transition: 0.5s;
+}
+.ser_tx4 h1{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 0.8;
 }
 
 .ser_tx1{
@@ -1152,9 +1179,7 @@ header .img_wrap {
     }
     .pro_text{
         text-align: center;
-        left: 30%;
-        right: 20%;
-
+        right: 33%;
     }
     .pro_text h2{
         right: 33%;
@@ -1167,6 +1192,7 @@ header .img_wrap {
         font-size: 26px;
         opacity: 1;
         top: 75%;
+        line-height: 26px;
     }
     .pro_ani{
         opacity: 0;
@@ -1251,7 +1277,7 @@ header .img_wrap {
     }
     .box_text{
         position: absolute;
-        left: 48%;
+        left: 45%;
     }
     .box_text h3{
         text-align: center;
@@ -1259,7 +1285,7 @@ header .img_wrap {
     .ico_box{
         position: absolute;
         top: 10%;
-        left: 18%;
+        left: 15%;
         width: calc(100% / 1.4);
         justify-content: center;
     }

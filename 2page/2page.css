@@ -609,7 +609,7 @@ header .img_wrap {
     overflow: hidden;
     border: 1px solid #184B9F;
     position: absolute;
-    left: 70%;
+    left: 69%;
     top: 0;
 }
 .pat_img3 img{
@@ -654,7 +654,7 @@ header .img_wrap {
     overflow: hidden;
     border: 1px solid #184B9F;
     position: absolute;
-    left: 70%;
+    left: 69%;
     top: 35%;
 }
 .pat_img6 img{
@@ -699,7 +699,7 @@ header .img_wrap {
     overflow: hidden;
     border: 1px solid #184B9F;
     position: absolute;
-    left: 70%;
+    left: 69%;
     top: 70%;
 }
 .pat_img9 img{
@@ -726,6 +726,7 @@ header .img_wrap {
     font-size: 20px;
     color: #959595;
     margin: 20px 0 45px 0;
+    font-weight: 400;
 }
 
 .map_tx2{
@@ -744,6 +745,7 @@ header .img_wrap {
     font-size: 20px;
     color: #959595;
     margin: 20px 0px 40px 10px;
+    font-weight: 400;
 }
 
 #section5{
@@ -847,12 +849,12 @@ header .img_wrap {
     }
     .jul{
         left: -188%;
-        width: 540%;
+        width: 495%;
         padding-left: 188%;
     }
     .timeline{
         top: 15%;
-        right: 40%;
+        right: 41%;
         width: 20%;
         min-width: 175px;
     }
@@ -860,7 +862,7 @@ header .img_wrap {
         left: -214%;
     }
     .title3{
-        left: -56.5%;
+        left: -64.5%;
     }
 
     /* section3 */
@@ -1097,13 +1099,24 @@ header .img_wrap {
         left: 16%;
     }
     /* section5 */
+    .map_tx{
+        width: 90%;
+        left: 4%
+    }
+    .map_tx2{
+        width: 90%;
+        left: 4%
+    }
     .map_tx h3 {
         margin: 20px 4% 45px 3%;
-        width: 85px;
+        width: 90px;
+    }
+    .map_tx h4{
+        width: 395px;
     }
     .map_tx2 h3 {
         margin: 20px 4% 65px 4%;
-        width: 69px;
+        width: 74px;
     }
 
     /* footer */
