@@ -217,9 +217,9 @@
   .nav_wrap .button-menu {
     margin-left: 0;
   }
-}
-.submenu_sections {    /* 추가 */
-    margin-top: 10px;
+  .submenu_sections {    /* 추가 */
+      margin-top: 10px;
+  }
 }
   
 /* post section */
