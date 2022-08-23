@@ -96,7 +96,7 @@ body{
 .nav_submenu_background {
   position: absolute;
   width: 100%;
-  height: 263px;
+  height: 200px;
   background-color: rgba(24, 75, 159, .7);
   opacity: 0;
   visibility: hidden;
@@ -132,7 +132,7 @@ body{
   display: flex;
   justify-content: flex-end;
   max-width: 1440px;
-  margin: 10px auto 0;
+  margin: 15px auto 0;
   padding: 0 50px;
 }
 .submenu_title li,
@@ -146,7 +146,7 @@ body{
   margin-right: 80px;
 }
 .submenu_sections_item li {
-  height: 32px;
+  line-height: 25px;
 }
 
 /* header */
@@ -428,6 +428,9 @@ footer {
   .submenu_title,
   .submenu_sections {
     justify-content: center;
+  }
+  .submenu_sections {
+    margin-top: 10px;
   }
   .submenu_title li,
   .submenu_sections li{
