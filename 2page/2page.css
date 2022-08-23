@@ -1099,6 +1099,9 @@ header .img_wrap {
         left: 16%;
     }
     /* section5 */
+    #map{
+        width: 89%;
+    }
     .map_tx{
         width: 90%;
         left: 4%
