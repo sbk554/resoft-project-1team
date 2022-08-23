@@ -12,7 +12,6 @@ body{
   position: sticky; /* 상단 고정 */
   top: 0;
   z-index: 1;
-  padding-right: 50px;
   background-color: white;
 }
 .nav_wrap,
@@ -26,7 +25,7 @@ body{
   margin: 0 auto;
   max-width: 1440px;
   height: 80px;
-  /* border: 1px solid black; */
+  padding: 0 50px;
 }
 .nav_wrap .logo_resoft{
   margin-left: 120px;
@@ -128,21 +127,19 @@ body{
   height: 100%;
   margin: 0 auto;
   font-weight: 500;
-  /* border: 1px solid black; */
 }
 .submenu_sections {
   display: flex;
   justify-content: flex-end;
   max-width: 1440px;
   margin: 10px auto 0;
-  padding-right: 50px;
+  padding: 0 50px;
 }
 .submenu_title li,
 .submenu_sections li {
   width: 100%;
   max-width: 134px;
   text-align: left;
-  /* border: 1px solid black; */
 }
 .submenu_title > li:last-child,
 .submenu_sections > li:last-child {
@@ -179,7 +176,7 @@ body{
   justify-content: space-between;
 }
 .container>p {
-  margin-bottom: 54px;
+  margin-bottom: 50px;
 }
 /* ecoce left */
 .ecoce_background {
@@ -207,7 +204,7 @@ body{
   line-height: 44px;
 }
 .image_ecoce_logo {
-  margin-top: 150px;
+  margin-top: 140px;
   /* width: 452px; */
   /* max-width: 500px; */
   max-width: 100%;
@@ -218,7 +215,7 @@ body{
   text-align: right;
   line-height: 32px;
   margin-top: 32px;
-  margin-bottom: 146px;
+  margin-bottom: 140px;
 }
 
 /* download button */
@@ -291,11 +288,11 @@ body{
 }
 .moado_content_right .logo_moado{
   max-width: 100%;
-  margin-top: 150px;
+  margin-top: 140px;
 }
 .button-moado {
-  margin-top: 100px;
-  margin-bottom: 218px;
+  margin-top: 140px;
+  margin-bottom: 200px;
 }
 .button-moado p {
   padding: 0 10px;
@@ -304,6 +301,7 @@ body{
 /* Third section - ETC */
 #section_etc {
   margin-bottom: 200px;
+  overflow: auto;
 }
 .etc_content_wrap {
   display: flex;
@@ -316,7 +314,7 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 0, .16) ;
 }
 .etc_content_wrap img:not(:last-child) {
-  margin-right: 5%;
+  margin-right: 4%;
 }
 
 /* footer */
@@ -406,10 +404,17 @@ footer {
 }
 @media screen and (max-width: 768px) {
   /* navigation */
-  .nav,
-  .submenu_title_wrap,
-  .submenu_sections {
-    padding-right: 30px;
+  .nav_wrap {
+    padding: 0 30px;
+  }
+  .nav_wrap .logo_resoft {
+    margin-left: 0;
+  }
+  .nav_wrap .nav_list {
+    display: none;
+  }
+  .nav_wrap .button-menu {
+    margin-left: 0;
   }
   /* Navigation - Submenu */
   .submenu_title_wrap {
@@ -418,7 +423,7 @@ footer {
   /* 중앙정렬 */
   .submenu_title_wrap,
   .submenu_sections {
-    padding-right: 0;
+    padding: 0;
   }
   .submenu_title,
   .submenu_sections {
@@ -436,15 +441,6 @@ footer {
   .submenu_title,
   .submenu_sections {
     max-width: 768px;
-  }
-  .nav_wrap .logo_resoft {
-    margin-left: 32px;
-  }
-  .nav_wrap .nav_list {
-    display: none;
-  }
-  .nav_wrap .button-menu {
-    margin-left: 0;
   }
   /* section */
   .container {

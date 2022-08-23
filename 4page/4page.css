@@ -12,7 +12,6 @@ body{
   position: sticky; /* 상단 고정 */
   top: 0;
   z-index: 1;
-  padding-right: 50px;
   background-color: white;
 }
 .nav_wrap,
@@ -26,6 +25,7 @@ body{
   margin: 0 auto;
   max-width: 1440px;
   height: 80px;
+  padding: 0 50px;
 }
 .nav_wrap .logo_resoft{
   margin-left: 120px;
@@ -110,7 +110,6 @@ body{
   padding-right: 50px;
   border-bottom: 1px solid white;
   display: none;
-  /* border: 1px solid black; */
 }
 .submenu_title {
   display: flex;
@@ -126,7 +125,7 @@ body{
   justify-content: flex-end;
   max-width: 1440px;
   margin: 10px auto 0;
-  padding-right: 50px;
+  padding: 0 50px;
 }
 .submenu_title li,
 .submenu_sections li {
@@ -179,6 +178,13 @@ main {
   cursor: pointer;
   transition: all .4s ease 0s;
 }
+.news_item:hover .news_img_wrap img {
+  transform: scale(1.2);
+  opacity: .5;
+}
+.news_item:hover .news_title {
+  color: #184B9F;
+}
 .news_img_wrap {
   border: 1px solid #707070;
   border-radius: 20px;
@@ -191,10 +197,10 @@ main {
   transition: transform .6s;
   transition: all .6s;
 }
-.news_img_wrap img:hover {
+/* .news_img_wrap img:hover {
   transform: scale(1.2);
   opacity: .5;
-}
+} */
 .news_item .news_text_wrap {
   /* border: 1px solid black; */
   text-overflow: ellipsis;
@@ -210,6 +216,7 @@ main {
   font-family: 'Noto Sans KR', sans-serif;
   color: #1E1E1E;
   margin-top: 16px;
+  padding-right: 15%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -229,6 +236,7 @@ main {
   margin: 0 auto 100px;
   background-color: #FFFFFF;
   font-size: 20px;
+  line-height: 29px;
   transition: all .4s ease-out;
 }
 .news_button_more:hover {
@@ -305,6 +313,9 @@ footer {
   .submenu_sections > li:last-child {
     margin-right: 32px;
   }
+  .news_title {
+    padding-right: 0;
+  }
   .footer_info_left{
     /* 사이에 여백 60px 추가 */
     margin-right: 60px;
@@ -312,10 +323,23 @@ footer {
 }
 @media screen and (max-width: 768px) {
   /* navigation */
-  .nav,
-  .submenu_title_wrap,
-  .submenu_sections {
-    padding-right: 30px;
+  .nav_wrap {
+    padding: 0 30px;
+  }
+  .nav_wrap,
+  .submenu_title,
+  .submenu_sections,
+  #resoft_news {
+    max-width: 768px;
+  }
+  .nav_wrap .logo_resoft {
+    margin-left: 0;
+  }
+  .nav_wrap .nav_list {
+    display: none;
+  }
+  .nav_wrap .button-menu {
+    margin-left: 0;
   }
   /* Navigation - Submenu */
   .submenu_title_wrap {
@@ -324,7 +348,7 @@ footer {
   /* 중앙정렬 */
   .submenu_title_wrap,
   .submenu_sections {
-    padding-right: 0;
+    padding: 0;
   }
   .submenu_title,
   .submenu_sections {
@@ -337,21 +361,6 @@ footer {
   .submenu_title li:last-child,
   .submenu_sections li:last-child {
     margin-right: 0;
-  }
-  .nav_wrap,
-  .submenu_title,
-  .submenu_sections,
-  #resoft_news {
-    max-width: 768px;
-  }
-  .nav_wrap .logo_resoft {
-    margin-left: 32px;
-  }
-  .nav_wrap .nav_list {
-    display: none;
-  }
-  .nav_wrap .button-menu {
-    margin-left: 0;
   }
   /* section */
   main {

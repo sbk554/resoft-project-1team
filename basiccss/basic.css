@@ -1,3 +1,4 @@
+/* 제목 텍스트 */
 .title_text {
   font-weight: 700;
   font-size: 40px;
@@ -5,9 +6,11 @@
   font-family: 'Noto Sans KR', sans-serif;
   color: #1E1E1E;
 }
+/* top 배너 텍스트 - title_text와 double class로 사용 */
 .title_text-white {
   color: #FFFFFF;
 }
+/* 소제목 텍스트 */
 .sub_title_text {
   font-weight: 500;
   font-size: 18px;
@@ -15,6 +18,7 @@
   font-family: 'Noto Sans KR', sans-serif;
   color: #c8c8c8;
 }
+/* 뉴스 제목 텍스트 */
 .content_title_text {
   font-weight: 700;
   font-size: 18px;
@@ -23,6 +27,7 @@
   letter-spacing: 0.9px;
   color: #1E1E1E;
 }
+/* 뉴스 날짜 텍스트 */
 .date_text {
   font-weight: 300;
   font-size: 16px;
@@ -31,10 +36,13 @@
   letter-spacing: 0.8px;
   color: #AAAAAA;
 }
+/* top 배너 속성 */
 .top_container{
-  background-image: url(./img/header_company.png);
+  background-image: url(../img/common/header_company.png);
   background-position: center;
+  background-size: cover;
 }
+/* top 배너 오버레이 */
 .top_overlay {
   display: flex;
   justify-content: center;
@@ -43,3 +51,4 @@
   background-color: rgba(30, 30, 30, 0.3);
   /* #1E1E1E -> rgb(30,30,30) */
 }
+/* nav 텍스트 추가 예정 */

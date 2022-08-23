@@ -8,6 +8,7 @@
   <title>REsoft</title>
   <link rel="stylesheet" href="../basiccss/reset.css">
   <link rel="stylesheet" href="../basiccss/basic.css">
+  <link rel="stylesheet" href="../wow/animate.css">
   <link rel="stylesheet" href="./3page.css">
   <!-- google font 추가 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,11 +105,11 @@
         <!-- ecoce content -->
         <div class="ecoce_content_wrap">
           <!-- 이미지 -->
-          <div class="ecoce_background">
+          <div class="ecoce_background wow fadeInLeft">
             <img src="../img/3page/proj_ecoce_app.png" alt="에코스 앱 실행화면" class="image_ecoce_app">
           </div>
           <!-- 설명 -->
-          <div class="ecoce_explain">
+          <div class="ecoce_explain wow fadeInRight">
             <h3 class="text_explain">국내 최초<br>탄소중립 실천인증 플랫폼</h3>
             <img src="../img/3page/logo_ecoce.png" alt="에코스 로고" class="image_ecoce_logo">
             <p>ECO-Clean Earth</p>
@@ -135,13 +136,13 @@
         <p class="sub_title_text">moaDo</p>
         <!-- moaDo content -->
         <div class="moado_content_wrap">
-          <div class="moado_content_left">
+          <div class="moado_content_left wow fadeInLeft">
             <img src="../img/3page/proj_moado.png" alt="모아두 실행화면" class="image_moado_app">
           </div>
-          <img src="../img/common/main-moado.png" alt="모아두를 사용하는 모습" class="image_use_moado">
-          <div class="moado_content_right">
+          <img src="../img/common/main-moado.png" alt="모아두를 사용하는 모습" class="image_use_moado wow">
+          <div class="moado_content_right wow fadeInRight">
             <h3 class="text_explain">내 손 안의 모바일 회원 수첩</h3>
-            <img src="../img/3page/logo_moado.png" alt="moado logo" class="logo_moado">
+            <img src="../img/3page/logo_moado.png" alt="모아두 로고" class="logo_moado">
             <a class="button-moado button-round-black">
               <p>사이트 바로가기</p>
             </a>
@@ -155,7 +156,7 @@
       <div class="container">
         <h2 class="title_text">ETC</h2>
         <p class="sub_title_text">PROJECTS</p>
-        <div class="etc_content_wrap">
+        <div class="etc_content_wrap wow fadeInRight">
           <img src="../img/3page/proj_daegumaskwalk.png" alt="2021 대구 마스크 쓰GO 컬러풀 핫플 걷기">
           <img src="../img/3page/proj_kua.png" alt="대한비뇨의학회">
           <img src="../img/3page/proj_hansung.png" alt="제8회 한성백제마라톤 비대면 대회">
@@ -185,68 +186,74 @@
     </div>
   </footer>
   
+  <!-- wow js -->
+  <script src="../wow/wow.min.js"></script>
+
   <script>
-  // Navigation
-  const submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
-  // let sublists = document.getElementsByClassName('nav_sublist');
-  // 세부 메뉴 열기/닫기
-  function openCloseMenu() {
-    if(submenuBack.style.opacity == 0) {
-      openMenu();
-    } else {
-      closeMenu();
+    // wow js
+    new WOW().init();
+
+    // Navigation
+    const submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
+    // let sublists = document.getElementsByClassName('nav_sublist');
+    // 세부 메뉴 열기/닫기
+    function openCloseMenu() {
+      if(submenuBack.style.opacity == 0) {
+        openMenu();
+      } else {
+        closeMenu();
+      }
     }
-  }
-  // 세부메뉴 열기
-  function openMenu() {
-    console.log("open menu")
-    submenuBack.style.visibility = 'visible';
-    submenuBack.style.opacity = 1;
-    
-    // for (let list of sublists) {
-    //   list.style.visibility = 'visible';
-    //   list.style.opacity = 1;
-    // }
-  }
-  // 세부메뉴 닫기
-  function closeMenu() {
-    console.log("close menu")
-    submenuBack.style.visibility = 'hidden';
-    submenuBack.style.opacity = 0;
-    
-    // for (let list of sublists) {
-    //   list.style.visibility = 'hidden';
-    //   list.style.opacity = 0;
-    // }
-  }
+    // 세부메뉴 열기
+    function openMenu() {
+      console.log("open menu")
+      submenuBack.style.visibility = 'visible';
+      submenuBack.style.opacity = 1;
+      
+      // for (let list of sublists) {
+      //   list.style.visibility = 'visible';
+      //   list.style.opacity = 1;
+      // }
+    }
+    // 세부메뉴 닫기
+    function closeMenu() {
+      console.log("close menu")
+      submenuBack.style.visibility = 'hidden';
+      submenuBack.style.opacity = 0;
+      
+      // for (let list of sublists) {
+      //   list.style.visibility = 'hidden';
+      //   list.style.opacity = 0;
+      // }
+    }
 
-  $(document).ready(function(){
-    $('.nav_submenu_background li a').click(closeMenu);
+    $(document).ready(function(){
+      $('.nav_submenu_background li a').click(closeMenu);
 
-    // 메뉴 마우스 오버시 상세메뉴 열기
-    // $('.nav_pagelink').hover(function(){
-    //   openMenu();
-    // }
-    // // , function() {
-    // //   closeMenu();
-    // // }
-    // );
-    
-    // 세부메뉴 영역을 떠나면 세부메뉴 닫기
-    // $('.nav_submenu_background, .nav_sublist').hover(
-    // function(){},
-    // function(){
-    //   closeMenu();
-    // });
-    
+      // 메뉴 마우스 오버시 상세메뉴 열기
+      // $('.nav_pagelink').hover(function(){
+      //   openMenu();
+      // }
+      // // , function() {
+      // //   closeMenu();
+      // // }
+      // );
+      
+      // 세부메뉴 영역을 떠나면 세부메뉴 닫기
+      // $('.nav_submenu_background, .nav_sublist').hover(
+      // function(){},
+      // function(){
+      //   closeMenu();
+      // });
+      
 
-    // let btnMenu = document.querySelector('.button-menu');
-    // let background = document.querySelector('nav_submenu_background');
-    // btnMenu.addEventListener('click', ()=>{
-    //   background.style.width = "263px";
-    // })
+      // let btnMenu = document.querySelector('.button-menu');
+      // let background = document.querySelector('nav_submenu_background');
+      // btnMenu.addEventListener('click', ()=>{
+      //   background.style.width = "263px";
+      // })
 
-  });
+    });
   </script>
 
 </body>

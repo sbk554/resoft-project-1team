@@ -8,6 +8,7 @@
   <title>REsoft</title>
   <link rel="stylesheet" href="../basiccss/reset.css">
   <link rel="stylesheet" href="../basiccss/basic.css">
+  <link rel="stylesheet" href="../wow/animate.css">
   <link rel="stylesheet" href="./4page.css">
   <!-- google font 추가 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -200,7 +201,13 @@
     </div>
   </footer>
 
+  <!-- wow js -->
+  <script src="../wow/wow.min.js"></script>
+
   <script>
+    // wow js
+    new WOW().init();
+
     // Navigation
     const submenuBack = document.getElementsByClassName('nav_submenu_background')[0];
 
@@ -236,6 +243,11 @@
     //     // location.href = '../5page/5page.html';
     // }
 
+    // animation class 추가
+    const itemList = document.getElementsByClassName('news_item');
+    for (let item of itemList) {
+      item.className += ' wow fadeInUp';
+    }
 
     $(document).ready(function(){
       $('.nav_submenu_background li a').click(closeMenu);
