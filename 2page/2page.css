@@ -713,9 +713,9 @@ header .img_wrap {
 .map_tx{
     position: absolute;
     display: flex;
-    left: 12%;
+    left: 13%;
     top: 70%;
-    width: 74%;
+    width: 72%;
     border-bottom: 2px solid #C8C8C8;
 }
 .map_tx h3{
@@ -731,9 +731,9 @@ header .img_wrap {
 .map_tx2{
     position: absolute;
     display: flex;
-    left: 12%;
+    left: 13%;
     top: 79%;
-    width: 74%;
+    width: 72%;
     border-bottom: 5px solid #C8C8C8;
 }
 .map_tx2 h3{
