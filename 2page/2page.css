@@ -247,7 +247,7 @@ header .img_wrap {
 }
 .re_text{
     position: absolute;
-    left: 15%;
+    left: 12%;
     top: 13%;
 }
 .re_text h1{
@@ -259,7 +259,8 @@ header .img_wrap {
 }
 .re_text2{
     position: absolute;
-    width: 100%;
+    width: 97%;
+    right: 5%;
     height: 500px;
     top: 30%;
 }
@@ -286,13 +287,13 @@ header .img_wrap {
 .re_tx7{
     border-bottom: 2px solid #C8C8C8;
 }
-.re_tx h2{margin: 0;}
-.re_tx2 h2{margin:0;}
-.re_tx3 h2{margin: 0;}
-.re_tx4 h2{margin: 0;}
-.re_tx5 h2{margin: 0;}
-.re_tx6 h2{margin: 0;}
-.re_tx7 h2{margin: 0;}
+.re_tx h2{margin: 0;font-weight: 400;}
+.re_tx2 h2{margin:0;font-weight: 400;}
+.re_tx3 h2{margin: 0;font-weight: 400;}
+.re_tx4 h2{margin: 0;font-weight: 400;}
+.re_tx5 h2{margin: 0;font-weight: 400;}
+.re_tx6 h2{margin: 0;font-weight: 400;}
+.re_tx7 h2{margin: 0;font-weight: 400;}
 
 /* section2 */
 #yunhyuk{
@@ -304,7 +305,7 @@ header .img_wrap {
 
 .yh_text{
     position: absolute;
-    left: 13%;
+    left: 12%;
     top: 8%;
 }
 .yh_text h1{
@@ -326,7 +327,7 @@ header .img_wrap {
     margin: 20px auto;
     padding: 20px;
     top: 16%;
-    left: 46%;
+    right: 34%;
     width: 25%;
 }
 .outer {
@@ -422,7 +423,7 @@ header .img_wrap {
 
 .zo_text{
     position: absolute;
-    left: 13%;
+    left: 12%;
     top: 10%;
     cursor: pointer;
 }
@@ -441,7 +442,9 @@ header .img_wrap {
 
 .zozic {
     top: 24%;
-    max-width: 80%;
+    right: 2%;
+    max-width: 78%;
+    min-width: 1038px;
     padding: 0 10px;
     margin: 0 auto;
     position: relative;
@@ -457,6 +460,7 @@ header .img_wrap {
 }
 .zozic h3{
     font-size: 26px;
+    font-weight: 500;
 }
 
 
@@ -549,7 +553,7 @@ header .img_wrap {
 }
 .pat_text{
     position: absolute;
-    left: 13%;
+    left: 12%;
     top: 10%;
 }
 
@@ -565,7 +569,7 @@ header .img_wrap {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    left: 8%;
+    left: 9%;
     top: 20%;
     width: calc(100%/1.5);
     height: 1150px;
@@ -709,9 +713,9 @@ header .img_wrap {
 .map_tx{
     position: absolute;
     display: flex;
-    left: 13%;
+    left: 12%;
     top: 70%;
-    width: 80%;
+    width: 74%;
     border-bottom: 2px solid #C8C8C8;
 }
 .map_tx h3{
@@ -727,9 +731,9 @@ header .img_wrap {
 .map_tx2{
     position: absolute;
     display: flex;
-    left: 13%;
-        top: 79%;
-    width: 80%;
+    left: 12%;
+    top: 79%;
+    width: 74%;
     border-bottom: 5px solid #C8C8C8;
 }
 .map_tx2 h3{
@@ -848,7 +852,7 @@ header .img_wrap {
     }
     .timeline{
         top: 15%;
-        left: 39%;
+        right: 40%;
         width: 20%;
         min-width: 175px;
     }
@@ -866,6 +870,7 @@ header .img_wrap {
     .zozic{
         top: 16%;
         max-width: 613px;
+        min-width: 0;
     }
     .zo_text{
         left: 11%;
